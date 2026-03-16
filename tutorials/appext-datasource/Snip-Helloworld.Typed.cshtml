@@ -2,13 +2,10 @@
 @using AppCode.Extensions.HelloWorld
 
 <h3>Hello World Example</h3>
-
 @{
     var helloDs = Kit.Data.GetSource<HelloWorldDataSource>();
-
     var helloWorld = AsItem(helloDs);
 }
-
 @if (helloWorld == null)
 {
     <p>No data available</p>
@@ -17,6 +14,7 @@
 
 <ul>
     <li>
-        <strong>Message:</strong> @helloWorld.String("Message");
+        <strong>Message:</strong>
+        @helloWorld.String("Message")
     </li>
 </ul>
