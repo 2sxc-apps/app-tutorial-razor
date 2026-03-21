@@ -9,6 +9,10 @@
     outputId: "query-filter-output-@UniqueKey",
     stream: "Authors"
   };
+  const withFilter = {
+    ...specsQueryFilterDemo,
+    '$filter': "FirstName eq 'Douglas'"
+  };
 </script>
 
 <button type="button" class="btn btn-primary"
@@ -17,10 +21,7 @@
 </button>
 
 <button type="button" class="btn btn-primary"
-  onclick="window.tutQueryOdata.load({
-    ...specsQueryFilterDemo,
-    '$filter': &quot;FirstName eq 'Douglas'&quot;
-  })">
+  onclick="window.tutQueryOdata.load(withFilter)">
   Load with $filter
 </button>
 
