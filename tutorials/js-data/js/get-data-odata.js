@@ -9,27 +9,25 @@
     const { moduleId, outputId, ...params } = specs;
 
     const sxc = $2sxc(moduleId);
-    const webApi = sxc.webApi;
 
     const outputElement = document.querySelector(`#${outputId}`);
-    if (!outputElement) return;
-
-    const urlElement = outputElement.querySelector("code");
-    const tableElement = outputElement.querySelector("table");
-    if (!urlElement || !tableElement) return;
+    if (!outputElement)
+      throw new Error(`Output element with id ${outputId} not found`);
 
     // Convert the params object to a query string, ensuring $ is not encoded
-    const niceUrl = buildDisplayUrl(webApi, params);
-    showUrl(urlElement, niceUrl);
+    showUrl(sxc, outputElement, params);
 
     // Do the fetch and display the data in the table
     sxc.data("Poets")
       .getAll(params)
-      .then((poets) => displayPoets(poets, tableElement));
+      .then((poets) => displayPoets(poets, outputElement));
   }
 
   // Display example data in the table
-  function displayPoets(poets, tableElement) {
+  function displayPoets(poets, outputElement) {
+    const tableElement = outputElement.querySelector("table");
+    if (!tableElement) return;
+
     const thead = tableElement.querySelector("thead");
     const tbody = tableElement.querySelector("tbody");
 
@@ -77,8 +75,8 @@
     row.appendChild(td);
   }
 
-  function buildDisplayUrl(webApi, params) {
-    const url = webApi
+  function buildDisplayUrl(sxc, params) {
+    const url = sxc.webApi
       .url(`app/auto/data/Poets`, params)
       .replace(/%24/g, "$")
       .replace(/%2C/g, ",");
@@ -92,8 +90,11 @@
   /**
    * Show the URL in the UI.
    */
-  function showUrl(urlElement, niceUrl) {
-    urlElement.innerText = `Fetching ${niceUrl}`;
+  function showUrl(sxc, outputElement, params) {
+    const urlElement = outputElement.querySelector("code");
+    if (!urlElement) return;
+    const url = buildDisplayUrl(sxc, params);
+    urlElement.innerText = `Fetching ${url}`;
   }
 
   const tutorial = (window.tutOdata = window.tutOdata || {});
