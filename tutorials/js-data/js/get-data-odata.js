@@ -14,8 +14,7 @@
     if (!outputElement)
       throw new Error(`Output element with id ${outputId} not found`);
 
-    // Convert the params object to a query string, ensuring $ is not encoded
-    // note: uses global helper loaded in another JS file
+    // Show the url in the UI - note: uses global helper loaded in another JS file
     window.tutOutputHelpers.showUrl(sxc, outputElement, params);
 
     // Do the fetch and display the data in the table

@@ -1,6 +1,7 @@
-// Use an IIFE to ensure the variables are not exposed globally
-// See https://developer.mozilla.org/en-US/docs/Glossary/IIFE
 (() => {
+  // Columns which should be formatted as dates
+  // Not perfect, because it's specific to this tutorial, but ok for demo
+  const dateColumns = new Set(["BirthDate", "Birthday", "Created", "Modified"]);
 
   // Display example data in the table
   function showData(items, outputElement) {
@@ -19,9 +20,7 @@
 
     const columns = Object.keys(items[0]);
 
-    const headerRow = document.createElement("tr");
-    columns.forEach((column) => addHeader(headerRow, column));
-    thead.appendChild(headerRow);
+    thead.innerHTML = `<tr>${columns.map((column) => `<th>${column}</th>`).join("")}</tr>`;
 
     items.forEach((item) => {
       const row = document.createElement("tr");
@@ -38,16 +37,19 @@
     if (value == null)
       return "";
 
-    if (columnName === "BirthDate")
+    if (Array.isArray(value) || typeof value === "object")
+      return JSON.stringify(value);
+
+    if (dateColumns.has(columnName))
       return new Date(value).toLocaleDateString();
 
-    return value;
-  }
+    if (typeof value === "string" && value.includes("<")) {
+      const temp = document.createElement("div");
+      temp.innerHTML = value;
+      return temp.textContent || temp.innerText || "";
+    }
 
-  function addHeader(row, text) {
-    const th = document.createElement("th");
-    th.innerText = text;
-    row.appendChild(th);
+    return value;
   }
 
   function addField(row, text) {
@@ -56,7 +58,32 @@
     row.appendChild(td);
   }
 
-  function buildDisplayUrl(sxc, params) {
+  /**
+   * Show the URL in the UI.
+   */
+  function showUrl(sxc, outputElement, params, stream) {
+    const urlElement = outputElement.querySelector("code");
+    if (!urlElement) return;
+    const url = buildUrl(sxc, params, stream);
+    urlElement.innerText = `Fetching ${url}`;
+  }
+
+  /**
+   * Build the query URL
+   */
+  function buildUrl(sxc, inputParams, stream) {
+    let params = {};
+
+    // copy params and do ???
+    if (stream)
+      Object.entries(inputParams).forEach(([key, value]) => {
+        if (value == null || value === "")
+          return;
+        params[key.startsWith("$") ? `${stream}${key}` : key] = value;
+      });
+    else
+      params = inputParams;
+
     const url = sxc.webApi
       .url(`app/auto/data/Poets`, params)
       .replace(/%24/g, "$")
@@ -68,18 +95,9 @@
       .replace(/%20/g, " ");
   }
 
-  /**
-   * Show the URL in the UI.
-   */
-  function showUrl(sxc, outputElement, params) {
-    const urlElement = outputElement.querySelector("code");
-    if (!urlElement) return;
-    const url = buildDisplayUrl(sxc, params);
-    urlElement.innerText = `Fetching ${url}`;
-  }
-
   window.tutOutputHelpers = window.tutOutputHelpers || {
     showData,
     showUrl,
+    buildUrl,
   };
 })();

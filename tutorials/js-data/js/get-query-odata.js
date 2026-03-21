@@ -4,9 +4,6 @@
   // Name of the query used on the backend
   const QUERY_NAME = "AuthorsWithBooks";
 
-  // Columns which should be formatted as dates
-  const dateColumns = new Set(["BirthDate", "Birthday", "Created", "Modified"]);
-
   /**
    * load query data and render one stream into a table.
    */
@@ -14,98 +11,44 @@
     const { moduleId, outputId, stream = "Current", ...inputParams } = specs;
 
     const sxc = $2sxc(moduleId);
-    const webApi = sxc.webApi;
 
     const outputElement = document.querySelector(`#${outputId}`);
-    if (!outputElement) return;
+    if (!outputElement)
+      throw new Error(`Output element with id ${outputId} not found`);
 
-    const urlElement = outputElement.querySelector("code");
-    const tableElement = outputElement.querySelector("table");
-    if (!urlElement || !tableElement) return;
+    // Show the url in the UI - note: uses global helper loaded in another JS file
+    window.tutOutputHelpers.showUrl(sxc, outputElement, inputParams, stream);
 
-    const url = buildQueryUrl(webApi, inputParams, stream);
-    showUrl(urlElement, url);
+    // sxc.query('AuthorsWithBooks').getStream(stream, inputParams).then((data) => {
+    //   console.log('2dm', data);
+    //   renderTable(data?.[stream], outputElement);
+    // });
 
-    webApi.fetchJson(url).then((data) => {
-      renderTable(data?.[stream], tableElement);
+    console.log('2dm new');
+    const url = buildQueryUrl(sxc, inputParams, stream);
+
+    sxc.webApi.fetchJson(url).then((data) => {
+      window.tutOutputHelpers.showData(data?.[stream], outputElement);
     });
-  }
-
-  /**
-   * Render items into a table using the keys of the first item as columns.
-   */
-  function renderTable(items, tableElement) {
-    const thead = tableElement.querySelector("thead");
-    const tbody = tableElement.querySelector("tbody");
-
-    thead.innerHTML = "";
-    tbody.innerHTML = "";
-
-    if (!items?.length) return;
-
-    const columns = Object.keys(items[0]);
-
-    thead.innerHTML = `<tr>${columns.map((column) => `<th>${column}</th>`).join("")}</tr>`;
-
-    items.forEach((item) => {
-      const row = document.createElement("tr");
-
-      columns.forEach((column) => {
-        const td = document.createElement("td");
-        const value = formatValue(item[column], column);
-
-        td.innerText = value;
-        row.appendChild(td);
-      });
-
-      tbody.appendChild(row);
-    });
-  }
-
-  /**
-   * Format values for display.
-   */
-  function formatValue(value, columnName) {
-    if (value == null) return "";
-
-    if (Array.isArray(value) || typeof value === "object")
-      return JSON.stringify(value);
-
-    if (dateColumns.has(columnName))
-      return new Date(value).toLocaleDateString();
-
-    if (typeof value === "string" && value.includes("<")) {
-      const temp = document.createElement("div");
-      temp.innerHTML = value;
-      return temp.textContent || temp.innerText || "";
-    }
-
-    return value;
   }
 
   /**
    * Build the query URL
    */
-  function buildQueryUrl(webApi, inputParams, stream) {
+  function buildQueryUrl(sxc, inputParams, stream) {
     const params = {};
 
     Object.entries(inputParams).forEach(([key, value]) => {
-      if (value == null || value === "") return;
+      if (value == null || value === "")
+        return;
       params[key.startsWith("$") ? `${stream}${key}` : key] = value;
     });
 
-    return webApi
+    return sxc.webApi
       .url(`app/auto/query/${QUERY_NAME}`, params)
       .replace(/%24/g, "$")
       .replace(/%2C/g, ",")
       .replace(/%27/g, "'");
-  }
-
-  /**
-   * Show the URL in the UI.
-   */
-  function showUrl(urlElement, url) {
-    urlElement.innerText = `Fetching ${url.substring(url.indexOf("2sxc")).replace("2sxc/", ".../")}`;
   }
 
   // Expose API globally for the tutorial buttons
