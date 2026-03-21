@@ -1,0 +1,33 @@
+@inherits Custom.Hybrid.RazorTyped
+@using ToSic.Razor.Blade
+
+@* Make sure anonymous users have the 2sxc JS API *@
+@Kit.Page.Activate("2sxc.JsCore")
+
+<script>
+  const specsDemo01 = {
+    moduleId: @MyContext.Module.Id,
+    outputId: "demo01-@UniqueKey"
+  };
+</script>
+
+<button type="button" class="btn btn-primary"
+  onclick="window.tutOdata.load(specsDemo01)">
+  Load without $select
+</button>
+
+<button type="button" class="btn btn-primary"
+  onclick="window.tutOdata.load({ ...specsDemo01, $select: 'Name,BirthDate,Poems' })">
+  Load with $select
+</button>
+
+<div id="demo01-@UniqueKey">
+  <code></code>
+  <br />
+  <table class="table">
+    <thead></thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<script src="@App.Folder.Url/tutorials/js-data/js/get-data-odata.js" @Kit.Page.AssetAttributes()></script>

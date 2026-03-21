@@ -1,0 +1,33 @@
+@inherits Custom.Hybrid.RazorTyped
+@using ToSic.Razor.Blade
+
+@* Make sure anonymous users have the 2sxc JS API *@
+@Kit.Page.Activate("2sxc.JsCore")
+
+<script>
+  const specsOrderByDemo = {
+    moduleId: @MyContext.Module.Id,
+    outputId: "demo03-@UniqueKey"
+  };
+</script>
+
+<button type="button" class="btn btn-primary"
+  onclick="window.tutOdata.load({ ...specsOrderByDemo, $orderby: 'Name' })">
+  Sort by name
+</button>
+
+<button type="button" class="btn btn-primary"
+  onclick="window.tutOdata.load({ ...specsOrderByDemo, $orderby: 'BirthDate desc' })">
+  Sort by birth date descending
+</button>
+
+<div id="demo03-@UniqueKey">
+  <code></code>
+  <br />
+  <table class="table">
+    <thead></thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<script src="@App.Folder.Url/tutorials/js-data/js/get-data-odata.js" @Kit.Page.AssetAttributes()></script>

@@ -1,0 +1,35 @@
+@inherits Custom.Hybrid.RazorTyped
+@using ToSic.Razor.Blade
+
+@Kit.Page.Activate("2sxc.JsCore")
+
+<script>
+  const specsQuerySkipDemo = {
+    moduleId: @MyContext.Module.Id,
+    outputId: "query-skip-output-@UniqueKey",
+    stream: "Authors"
+  };
+</script>
+
+<button type="button" class="btn btn-primary"
+  onclick="window.tutQueryOdata.load(specsQuerySkipDemo)">
+  Load query results
+</button>
+
+<button type="button" class="btn btn-primary"
+  onclick="window.tutQueryOdata.load({
+    ...specsQuerySkipDemo,
+    '$skip': 2
+  })">
+  Load with $skip
+</button>
+
+<div style="overflow-x:auto;" id="query-skip-output-@UniqueKey">
+  <code></code><br />
+  <table style="width:100%; border-collapse:collapse;" class="table">
+    <thead></thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<script src="@App.Folder.Url/tutorials/js-data/js/get-query-odata.js" @Kit.Page.AssetAttributes()></script>

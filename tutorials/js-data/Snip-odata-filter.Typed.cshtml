@@ -1,0 +1,38 @@
+@inherits Custom.Hybrid.RazorTyped
+@using ToSic.Razor.Blade
+
+@* Make sure anonymous users have the 2sxc JS API *@
+@Kit.Page.Activate("2sxc.JsCore")
+
+<script>
+  const specsFilterDemo = {
+    moduleId: @MyContext.Module.Id,
+    outputId: "demo02-@UniqueKey"
+  };
+</script>
+
+<button type="button" class="btn btn-primary"
+  onclick="window.tutOdata.load(specsFilterDemo)">
+  Load all poets
+</button>
+
+<button type="button" class="btn btn-primary"
+  onclick="window.tutOdata.load({ ...specsFilterDemo, $filter: `Name eq 'Gale Hansen'` })">
+  Filter by exact name
+</button>
+
+<button type="button" class="btn btn-primary"
+  onclick="window.tutOdata.load({ ...specsFilterDemo, $filter: `startswith(Name, 'G')` })">
+  Filter names starting with G
+</button>
+
+<div id="demo02-@UniqueKey">
+  <code></code>
+  <br />
+  <table class="table">
+    <thead></thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<script src="@App.Folder.Url/tutorials/js-data/js/get-data-odata.js" @Kit.Page.AssetAttributes()></script>
