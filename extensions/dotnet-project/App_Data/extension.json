@@ -9,7 +9,7 @@
   "linkDocs": "https://go.2sxc.org/ext-csproj",
   "linkSource": "https://github.com/2sxc-apps/app-extension-dotnet-project",
   "linkDemo": "https://go.2sxc.org/vscode",
-  "version": "01.00.00",
+  "version": "01.00.01",
   "releases": [],
   "isInstalled": true,
   "editionsSupported": true,

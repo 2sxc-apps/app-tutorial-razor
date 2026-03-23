@@ -1,10 +1,10 @@
 {
   "comments": "This file contains the list of files in a package with their hashes to check if files were changed.",
-  "version": "01.00.00",
+  "version": "01.00.01",
   "files": [
     {
       "file": "/Extensions/dotnet-project/all-in-one.import.csproj",
-      "hash": "da090a9f20bed68f940d98649d641f8c9c85e77a9f5833cd50213470a295842a"
+      "hash": "c2f8ec2d8d3445759094962842a3d782c9d9630995111ad235fe0745f68184ef"
     },
     {
       "file": "/Extensions/dotnet-project/icon.png",
@@ -55,6 +55,10 @@
       "hash": "0c48f929d708890cf58dc1ebb566d310e72d684fca214f21959bcc8e57aa60a8"
     },
     {
+      "file": "/Extensions/dotnet-project/8-final/publish-targetpath.props",
+      "hash": "2177168d5aac48586eca7620a700dbc66462d6c7dca3e82e770f8c1e9a26dee6"
+    },
+    {
       "file": "/Extensions/dotnet-project/9-devkit/dnn/all.props",
       "hash": "1e88c3594262c6da60d76be45c9c3b30127c2f7a2a5ea2f82775114cc5dd9bf9"
     },
@@ -84,7 +88,7 @@
     },
     {
       "file": "/Extensions/dotnet-project/App_Data/extension.json",
-      "hash": "34feef77915c2bdbb0fb393cd8b1a35edc487ea3fc63eb09c6afdba4ea3a4f53"
+      "hash": "14459d6b92c6deb339eb5cf4ef6c6578e7c35033a4e126f353f9edd13805c4fc"
     }
   ]
 }

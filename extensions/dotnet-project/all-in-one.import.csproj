@@ -20,9 +20,10 @@
   <Import Project="3-setup\oqtane\properties.props" Condition="'$(CmsType)' == 'oqtane'" />
   <Import Project="3-setup\oqtane\import-dlls.props" Condition="'$(CmsType)' == 'oqtane'" />
 
-  <!-- Step 4 4: Shared references and file filtering -->
+  <!-- Step 4 4: Shared references and final content shaping -->
   <Import Project=".\8-final\import-dlls.props" />
   <Import Project=".\8-final\ignore-editions.props" />
+  <Import Project=".\8-final\publish-targetpath.props" />
 
   <!-- Step 4 5: DNN only: enable the legacy helper-based Razor design-time pipeline for DNN.
        Oqtane runs on the Web SDK, which already wires up Razor source generators correctly. -->
