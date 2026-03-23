@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="21.06.00" ExportDate="2026-03-11T16:45:24.2430761+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="21.06.00" ExportDate="2026-03-23T22:27:34.1297811+01:00">
   <Header>
     <App Guid="efe3b9cf-1382-40b3-bee2-34becb5351bc" />
     <Language Default="en-us" />
@@ -11047,7 +11047,7 @@
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="1b794fc1-7e13-439c-bfeb-d184accc0ea7" AttributeSetName="TutorialSection" EntityGUID="563b1165-c4a7-4f30-abc1-ebff878b7707">
       <Value Key="Category" Value="30294fa8-f452-4dde-aaeb-bd2f34e704f9" Type="Entity" />
       <Value Key="FeatureSet" Value="90449998-63dc-49d4-94a2-270f3ccf787b" Type="Entity" />
-      <Value Key="Introduction" Value="&lt;div&gt;&#xA;&lt;div&gt;2sxc offers powerful helpers to just get things done - or to do things your way.&lt;/div&gt;&#xA;&lt;/div&gt;" Type="String">
+      <Value Key="Introduction" Value="&lt;p&gt;2sxc offers powerful helpers to just get things done - or to do things your way.&lt;/p&gt;" Type="String">
         <Dimension DimensionID="141" ReadOnly="false" />
       </Value>
       <Value Key="NameId" Value="js" Type="String">
@@ -11059,10 +11059,10 @@
       <Value Key="SegmentTitle" Value="JavaScript Tutorial" Type="String">
         <Dimension DimensionID="141" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="JavaScript" Type="String">
+      <Value Key="Title" Value="JavaScript (Improved v21 ⭐ with OData)" Type="String">
         <Dimension DimensionID="141" ReadOnly="false" />
       </Value>
-      <Value Key="TutorialGroups" Value="c001280f-a5fc-4d46-ace5-0480be0db61a,874213f7-43a9-4c36-b3a1-17c2935f3780,e653f0dd-9a33-4055-b4b9-df817c7433d0" Type="Entity" />
+      <Value Key="TutorialGroups" Value="c001280f-a5fc-4d46-ace5-0480be0db61a,7b9cbb38-aa4e-42ac-9d19-4d639a21ef2b,874213f7-43a9-4c36-b3a1-17c2935f3780,e653f0dd-9a33-4055-b4b9-df817c7433d0" Type="Entity" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="1b794fc1-7e13-439c-bfeb-d184accc0ea7" AttributeSetName="TutorialSection" EntityGUID="145ff852-3ebb-4314-b544-45b9c5e15baf">
       <Value Key="FeatureSet" Value="f6332eec-5ebe-4f9f-ac81-e0dd450b548e" Type="Entity" />
@@ -15870,20 +15870,20 @@
     <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="bbee6f69-1757-4783-8652-f102c87fe565" Json="True" KeyGuid="11da4272-0097-43e6-9d78-0921d8e0d199">
       <Value Key="Description" Value="" Type="String" />
       <Value Key="Name" Value="App" Type="String" />
-      <Value Key="PartAssemblyAndType" Value="ToSic.Eav.DataSources.App, ToSic.Eav.DataSources" Type="String" />
-      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 460,&#xD;&#xA;  &quot;Left&quot;: 420&#xD;&#xA;}" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="abbaaaaa-fc61-4196-8eb6-b7af23cc288a" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 600,&#xD;&#xA;  &quot;Left&quot;: 400&#xD;&#xA;}" Type="String" />
     </Entity>
     <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="57d48490-f1de-4ef9-862d-f77dfcadb368" Json="True" KeyGuid="11da4272-0097-43e6-9d78-0921d8e0d199">
       <Value Key="Description" Value="" Type="String" />
       <Value Key="Name" Value="Get 3 persons" Type="String" />
-      <Value Key="PartAssemblyAndType" Value="ToSic.Eav.DataSources.Paging, ToSic.Eav.DataSources" Type="String" />
-      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 200,&#xD;&#xA;  &quot;Left&quot;: 300&#xD;&#xA;}" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="4c30d275-834d-42d5-8196-12c8dbbbb6f8" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 380,&#xD;&#xA;  &quot;Left&quot;: 260&#xD;&#xA;}" Type="String" />
     </Entity>
     <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="ce38d710-1c0d-4d4e-8126-29f5f275b40b" Json="True" KeyGuid="11da4272-0097-43e6-9d78-0921d8e0d199">
       <Value Key="Description" Value="" Type="String" />
       <Value Key="Name" Value="Value Filter" Type="String" />
-      <Value Key="PartAssemblyAndType" Value="ToSic.Eav.DataSources.ValueFilter, ToSic.Eav.DataSources" Type="String" />
-      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 200,&#xD;&#xA;  &quot;Left&quot;: 580&#xD;&#xA;}" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="26455fe7-e179-418c-86f7-88dd34fde6a6" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 380,&#xD;&#xA;  &quot;Left&quot;: 580&#xD;&#xA;}" Type="String" />
     </Entity>
     <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="|Config ToSic.Eav.DataSources.Paging" AttributeSetName="ToSic.Eav.DataSources.Paging" EntityGUID="807c2c50-3e0c-4ee5-978a-93d7f8aca2c5" Json="True" KeyGuid="57d48490-f1de-4ef9-862d-f77dfcadb368">
       <Value Key="PageNumber" Value="1" Type="String">
@@ -15914,15 +15914,33 @@
       </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="DataPipeline" AttributeSetName="DataPipeline" EntityGUID="11da4272-0097-43e6-9d78-0921d8e0d199" Json="True">
-      <Value Key="AllowEdit" Value="True" Type="Boolean" />
-      <Value Key="Description" Value="" Type="String" />
-      <Value Key="HiddenInQueryPicker" Value="False" Type="Boolean" />
-      <Value Key="Name" Value="QuickRef-Persons-Selected" Type="String" />
-      <Value Key="Params" Value="" Type="String" />
-      <Value Key="StreamsOut" Value="Default,Header,Selected" Type="String" />
-      <Value Key="StreamWiring" Value="bbee6f69-1757-4783-8652-f102c87fe565:Persons&gt;57d48490-f1de-4ef9-862d-f77dfcadb368:Default&#xD;&#xA;57d48490-f1de-4ef9-862d-f77dfcadb368:Default&gt;Out:Default&#xD;&#xA;bbee6f69-1757-4783-8652-f102c87fe565:Persons&gt;ce38d710-1c0d-4d4e-8126-29f5f275b40b:Default&#xD;&#xA;ce38d710-1c0d-4d4e-8126-29f5f275b40b:Default&gt;Out:Selected" Type="String" />
-      <Value Key="TestParameters" Value="" Type="String" />
-      <Value Key="VisualDesignerData" Value="{&quot;ShowDataSourceDetails&quot;:true}" Type="String" />
+      <Value Key="AllowEdit" Value="True" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="HiddenInQueryPicker" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Name" Value="QuickRef-Persons-Selected" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Params" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="StreamsOut" Value="Default,Header,Selected" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="StreamWiring" Value="bbee6f69-1757-4783-8652-f102c87fe565:Persons&gt;57d48490-f1de-4ef9-862d-f77dfcadb368:Default&#xA;57d48490-f1de-4ef9-862d-f77dfcadb368:Default&gt;Out:Default&#xA;bbee6f69-1757-4783-8652-f102c87fe565:Persons&gt;ce38d710-1c0d-4d4e-8126-29f5f275b40b:Default&#xA;ce38d710-1c0d-4d4e-8126-29f5f275b40b:Default&gt;Out:Selected" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TestParameters" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="VisualDesignerData" Value="{&quot;ShowDataSourceDetails&quot;:true}" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
     </Entity>
     <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="d364c50c-6f3e-424e-9a79-3501c00abeac" Json="True" KeyString="38af8959-8662-4718-be05-4e5119d466a4">
       <Value Key="AdditionalSettings" Value="" Type="String">
@@ -40821,20 +40839,20 @@
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="1b794fc1-7e13-439c-bfeb-d184accc0ea7" AttributeSetName="TutorialSection" EntityGUID="245c1d68-4c2f-4204-9c83-cdc91fc4b697">
       <Value Key="Category" Value="85914f1a-fb20-45da-90c7-add4affdf305" Type="Entity" />
-      <Value Key="FeatureSet" Value="9e0db8ca-6b12-418e-bb59-6af1442e07d5" Type="Entity" />
+      <Value Key="FeatureSet" Value="7d79fec7-2834-4ee3-9171-9370f0f1ec4c" Type="Entity" />
       <Value Key="Introduction" Value="&lt;p&gt;Learn how to build App Extensions in 2sxc to add reusable logic, custom DataSources, and integrations. Start with simple examples and progress towards powerful extension patterns used across apps.&lt;/p&gt;" Type="String">
         <Dimension DimensionID="141" ReadOnly="false" />
       </Value>
       <Value Key="NameId" Value="app-extensions" Type="String">
         <Dimension DimensionID="141" ReadOnly="false" />
       </Value>
-      <Value Key="SegmentName" Value="Content" Type="String">
+      <Value Key="SegmentName" Value="App-Extensions" Type="String">
         <Dimension DimensionID="141" ReadOnly="false" />
       </Value>
       <Value Key="SegmentTitle" Value="Content Items / Entities" Type="String">
         <Dimension DimensionID="141" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="App Extensions WIP" Type="String">
+      <Value Key="Title" Value="App Extensions (new v21 ⭐)" Type="String">
         <Dimension DimensionID="141" ReadOnly="false" />
       </Value>
       <Value Key="TutorialGroups" Value="8267695b-5d22-4fe8-919f-d7afc49e553e" Type="Entity" />
@@ -40846,7 +40864,7 @@
       <Value Key="HasVariants" Value="False" Type="Boolean">
         <Dimension DimensionID="141" ReadOnly="false" />
       </Value>
-      <Value Key="Intro" Value="" Type="String">
+      <Value Key="Intro" Value="&lt;p&gt;This tutorial focuses on how to build very basic extensions so you understand the setup.&lt;/p&gt;" Type="String">
         <Dimension DimensionID="141" ReadOnly="false" />
       </Value>
       <Value Key="IntroMoreDyn" Value="" Type="String">
@@ -40873,7 +40891,7 @@
       <Value Key="NameId" Value="app-extensions-page" Type="String">
         <Dimension DimensionID="141" ReadOnly="false" />
       </Value>
-      <Value Key="Note" Value="&lt;p&gt;This tutorial focuses on understanding the extension workflow.&lt;/p&gt;" Type="String">
+      <Value Key="Note" Value="" Type="String">
         <Dimension DimensionID="141" ReadOnly="false" />
       </Value>
       <Value Key="OutputAndSourceDisplay" Value="" Type="String">
@@ -40902,7 +40920,7 @@
         <Dimension DimensionID="141" ReadOnly="false" />
       </Value>
       <Value Key="InDepthImages" Value="" Type="Hyperlink" />
-      <Value Key="Intro" Value="&lt;p&gt;Learn how to create a minimal App Extension in 2sxc by building a simple Hello World DataSource and rendering its data in a Razor view.&lt;/p&gt;" Type="String">
+      <Value Key="Intro" Value="&lt;p&gt;Learn how to create a &lt;strong&gt;minimal App DataSource Extension&lt;/strong&gt; in 2sxc by building a simple Hello World DataSource and rendering its data in a Razor view.&lt;/p&gt;" Type="String">
         <Dimension DimensionID="141" ReadOnly="false" />
       </Value>
       <Value Key="IntroMoreDyn" Value="" Type="String">
@@ -40948,7 +40966,7 @@
         <Dimension DimensionID="141" ReadOnly="false" />
       </Value>
       <Value Key="InDepthImages" Value="" Type="Hyperlink" />
-      <Value Key="Intro" Value="&lt;p&gt;Learn how to create a minimal App Extension in 2sxc by building a simple Hello World&lt;/p&gt;" Type="String">
+      <Value Key="Intro" Value="&lt;p&gt;Learn how to create a &lt;strong&gt;minimal App Extension&lt;/strong&gt; in 2sxc by building a simple Hello World.&lt;/p&gt;&#xA;&lt;p&gt;This extension just includes a razor file showing &quot;Hello World&quot; in a Bootstrap alert-box.&lt;/p&gt;" Type="String">
         <Dimension DimensionID="141" ReadOnly="false" />
       </Value>
       <Value Key="IntroMoreDyn" Value="" Type="String">
@@ -45350,6 +45368,1173 @@
         <Dimension DimensionID="141" ReadOnly="false" />
       </Value>
       <Value Key="Variants" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="d4557467-49cd-495c-bc02-d608af51fec1" Json="True" KeyGuid="11da4272-0097-43e6-9d78-0921d8e0d199">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="Value Sort" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="dbfd32a4-4978-4d74-b1e6-66570a5aeac1" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 200,&#xD;&#xA;  &quot;Left&quot;: 220&#xD;&#xA;}" Type="String" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="a2e686d4-ece4-4187-8a57-2b6cd0284960" AttributeSetName="TutorialFeatureSet" EntityGUID="7d79fec7-2834-4ee3-9171-9370f0f1ec4c">
+      <Value Key="Icon" Value="file:6450" Type="Hyperlink">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Link" Value="" Type="Hyperlink">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LogoBanner" Value="" Type="Hyperlink">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="NameId" Value="app-extensions" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="1b794fc1-7e13-439c-bfeb-d184accc0ea7" AttributeSetName="TutorialSection" EntityGUID="1150ebb9-f0a2-43c1-963a-7cb536d72412">
+      <Value Key="Category" Value="30294fa8-f452-4dde-aaeb-bd2f34e704f9" Type="Entity" />
+      <Value Key="Introduction" Value="&lt;p&gt;Use the 2sxc JS API to get Data with OData&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="NameId" Value="js-odata" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="SegmentName" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="SegmentTitle" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Use the 2sxc JS API to get Data with OData" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="908119e9-7383-4550-bca5-08864f5af456" AttributeSetName="TutorialGroup" EntityGUID="7b9cbb38-aa4e-42ac-9d19-4d639a21ef2b">
+      <Value Key="Accordions" Value="17006f61-6c57-48fc-a686-c30cfcf368d7,577fc4fa-bfdd-4fee-adb9-6bf397229e3f" Type="Entity" />
+      <Value Key="DefaultStateIsOpen" Value="True" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="HasVariants" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Intro" Value="&lt;p data-start=&quot;43&quot; data-end=&quot;151&quot;&gt;This page uses the 2sxc JS API to retrieve data from the backend using OData and display it with JavaScript.&lt;/p&gt;&#xA;&lt;p data-start=&quot;153&quot; data-end=&quot;190&quot;&gt;In this tutorial you'll learn how to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li data-start=&quot;192&quot; data-end=&quot;399&quot;&gt;Use the 2sxc JS API to access data&lt;/li&gt;&#xA;&lt;li data-start=&quot;192&quot; data-end=&quot;399&quot;&gt;Query data through the OData endpoint&lt;/li&gt;&#xA;&lt;li data-start=&quot;192&quot; data-end=&quot;399&quot;&gt;Read and inspect the returned JSON data&lt;/li&gt;&#xA;&lt;li data-start=&quot;192&quot; data-end=&quot;399&quot;&gt;Filter or work with the results in JavaScript&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Look at the content below to see the effect.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreDyn" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreStrong" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreTyped" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IsPage" Value="True" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkEmphasis" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkTeaser" Value="&lt;p&gt;Use the 2sxc JS API to get Data with OData&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkTitle" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="NameId" Value="js-odata-page" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Note" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputAndSourceDisplay" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="RefSharedSpecs" Value="c4920680-c52f-48c9-9dfb-e4548e20bead" Type="Entity" />
+      <Value Key="ShareImage" Value="" Type="Hyperlink">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="&lt;p&gt;Use the 2sxc JS API to get Data with OData (new v21 ⭐)&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TitleForPicker" Value="js-odata-page - Use the 2sxc JS API to get Data with OData (new v21 ⭐)" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Variants" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="XxxLogo" Value="" Type="Hyperlink">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="38af8959-8662-4718-be05-4e5119d466a4" AttributeSetName="TutorialSnippet" EntityGUID="f3021f40-72cb-42f0-99b8-4495febab6ca">
+      <Value Key="AddOns" Value="0124103c-2b25-4daf-91d9-67cbaa75adb3" Type="Entity" />
+      <Value Key="InDepthExplanation" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="InDepthImages" Value="" Type="Hyperlink" />
+      <Value Key="Intro" Value="&lt;p&gt;This example shows how to use the &lt;strong data-start=&quot;407&quot; data-end=&quot;430&quot;&gt;2sxc API&lt;/strong&gt; to read data from a DataSource using &lt;strong data-start=&quot;468&quot; data-end=&quot;485&quot;&gt;OData queries&lt;/strong&gt;.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreDyn" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreStrong" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreTyped" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Note" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputAndSourceDisplay" Value="out-src" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputWidth" Value="33" Type="Number">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="PageActivate" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Tabs" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="&lt;p&gt;$select&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="ToolbarsForAnonymous" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialId" Value="js-data-odata-get" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialType" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="dfde1f60-e7bb-458e-8c06-cad18786e896" AttributeSetName="TutorialSnippetAddOn" EntityGUID="911b93c5-7e83-4c7c-a41f-5af73c98e455">
+      <Value Key="AddOnType" Value="file" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="FilePath" Value="tutorials/js-data/js/get-query-odata.js" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="ShowFullFilePath" Value="True" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TabTitle" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TabTitleGeneration" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="file: tutorials/js-data/js/get-query-odata.js" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Variants" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="38af8959-8662-4718-be05-4e5119d466a4" AttributeSetName="TutorialSnippet" EntityGUID="ea5c21a2-b282-4774-b91f-581183bcecde">
+      <Value Key="AddOns" Value="0124103c-2b25-4daf-91d9-67cbaa75adb3" Type="Entity" />
+      <Value Key="InDepthExplanation" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="InDepthImages" Value="" Type="Hyperlink" />
+      <Value Key="Intro" Value="&lt;p&gt;This example shows how to use the 2sxc API to filter data from a DataSource using the OData `$filter` query option.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreDyn" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreStrong" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreTyped" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Note" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputAndSourceDisplay" Value="out-src" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputWidth" Value="33" Type="Number">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="PageActivate" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Tabs" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="&lt;p&gt;&lt;code&gt;$filter&lt;/code&gt; with &lt;code&gt;eq&lt;/code&gt; and &lt;code&gt;startsWith&lt;/code&gt;&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="ToolbarsForAnonymous" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialId" Value="js-data-odata-filter" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialType" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="38af8959-8662-4718-be05-4e5119d466a4" AttributeSetName="TutorialSnippet" EntityGUID="935fe34e-6389-4c9a-88cf-f9d017580267">
+      <Value Key="AddOns" Value="0124103c-2b25-4daf-91d9-67cbaa75adb3" Type="Entity" />
+      <Value Key="InDepthExplanation" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="InDepthImages" Value="" Type="Hyperlink" />
+      <Value Key="Intro" Value="&lt;p&gt;This example shows how to use the 2sxc API to sort data from a DataSource using the OData &lt;code data-start=&quot;315&quot; data-end=&quot;325&quot;&gt;$orderby&lt;/code&gt; query option.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreDyn" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreStrong" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreTyped" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Note" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputAndSourceDisplay" Value="out-src" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputWidth" Value="33" Type="Number">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="PageActivate" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Tabs" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="&lt;p&gt;$orderby and $orderby ... desc&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="ToolbarsForAnonymous" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialId" Value="js-data-odata-orderby" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialType" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="38af8959-8662-4718-be05-4e5119d466a4" AttributeSetName="TutorialSnippet" EntityGUID="13996a1e-d41a-4298-9020-11dd23bbded6">
+      <Value Key="AddOns" Value="0124103c-2b25-4daf-91d9-67cbaa75adb3" Type="Entity" />
+      <Value Key="InDepthExplanation" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="InDepthImages" Value="" Type="Hyperlink" />
+      <Value Key="Intro" Value="&lt;p&gt;This example shows how to use the 2sxc API to limit the number of items returned from a DataSource using the OData &lt;code data-start=&quot;467&quot; data-end=&quot;473&quot;&gt;$top&lt;/code&gt; query option.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreDyn" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreStrong" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreTyped" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Note" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputAndSourceDisplay" Value="out-src" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputWidth" Value="33" Type="Number">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="PageActivate" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Tabs" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="&lt;p&gt;$top&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="ToolbarsForAnonymous" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialId" Value="js-data-odata-top" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialType" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="38af8959-8662-4718-be05-4e5119d466a4" AttributeSetName="TutorialSnippet" EntityGUID="cc1116ac-cdd1-46f7-b295-dd092ddce85b">
+      <Value Key="AddOns" Value="0124103c-2b25-4daf-91d9-67cbaa75adb3" Type="Entity" />
+      <Value Key="InDepthExplanation" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="InDepthImages" Value="" Type="Hyperlink" />
+      <Value Key="Intro" Value="&lt;p&gt;This example shows how to use the 2sxc API to skip items from a DataSource using the OData &lt;code data-start=&quot;1853&quot; data-end=&quot;1860&quot;&gt;$skip&lt;/code&gt; query option.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreDyn" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreStrong" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreTyped" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Note" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputAndSourceDisplay" Value="out-src" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputWidth" Value="33" Type="Number">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="PageActivate" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Tabs" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="&lt;p&gt;$skip&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="ToolbarsForAnonymous" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialId" Value="js-data-odata-skip" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialType" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="5d80444c-6a29-4603-949a-29d977c0e459" AttributeSetName="PoetsToEdit" EntityGUID="3b99e7fc-094f-46c9-93db-33d90e13cfc8">
+      <Value Key="BirthDate" Value="2021-01-01T00:00:00" Type="DateTime">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Name" Value="SuperPoet 667" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Poems" Value="503" Type="Number">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="908119e9-7383-4550-bca5-08864f5af456" AttributeSetName="TutorialGroup" EntityGUID="015c13c9-ccbc-425c-a1fb-f9a40098ab62">
+      <Value Key="DefaultStateIsOpen" Value="True" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="HasVariants" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Intro" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreDyn" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreStrong" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreTyped" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IsPage" Value="True" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkEmphasis" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkTeaser" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkTitle" Value="&lt;p&gt;js-odata-page&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="NameId" Value="js-odata-page" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Note" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputAndSourceDisplay" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="ShareImage" Value="" Type="Hyperlink">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TitleForPicker" Value="js-odata-page - " Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Variants" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="XxxLogo" Value="" Type="Hyperlink">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="908119e9-7383-4550-bca5-08864f5af456" AttributeSetName="TutorialGroup" EntityGUID="008e86ff-9bef-48d8-905f-5d093ae01413">
+      <Value Key="DefaultStateIsOpen" Value="True" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="HasVariants" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Intro" Value="&lt;p data-start=&quot;83&quot; data-end=&quot;196&quot;&gt;This page uses the 2sxc JS API to retrieve data from a Query endpoint using OData and display it with JavaScript.&lt;/p&gt;&#xA;&lt;p data-start=&quot;198&quot; data-end=&quot;235&quot;&gt;In this tutorial you'll learn how to:&lt;/p&gt;&#xA;&lt;ul data-start=&quot;237&quot; data-end=&quot;452&quot;&gt;&#xA;&lt;li data-section-id=&quot;13l9cy4&quot; data-start=&quot;237&quot; data-end=&quot;286&quot;&gt;&#xA;&lt;p data-start=&quot;239&quot; data-end=&quot;286&quot;&gt;Use the 2sxc JS API to access Query endpoints&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li data-section-id=&quot;n7ooxv&quot; data-start=&quot;287&quot; data-end=&quot;366&quot;&gt;&#xA;&lt;p data-start=&quot;289&quot; data-end=&quot;366&quot;&gt;Apply OData query options like &lt;code data-start=&quot;320&quot; data-end=&quot;329&quot;&gt;$filter&lt;/code&gt;, &lt;code data-start=&quot;331&quot; data-end=&quot;341&quot;&gt;$orderby&lt;/code&gt;, &lt;code data-start=&quot;343&quot; data-end=&quot;349&quot;&gt;$top&lt;/code&gt;, and &lt;code data-start=&quot;355&quot; data-end=&quot;364&quot;&gt;$select&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li data-section-id=&quot;13zblj1&quot; data-start=&quot;367&quot; data-end=&quot;410&quot;&gt;&#xA;&lt;p data-start=&quot;369&quot; data-end=&quot;410&quot;&gt;Read and inspect the returned JSON data&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li data-section-id=&quot;4r6vfz&quot; data-start=&quot;411&quot; data-end=&quot;452&quot;&gt;&#xA;&lt;p data-start=&quot;413&quot; data-end=&quot;452&quot;&gt;Work with Query results in JavaScript&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p data-start=&quot;454&quot; data-end=&quot;498&quot;&gt;Look at the content below to see the effect.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreDyn" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreStrong" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreTyped" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IsPage" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkEmphasis" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkTeaser" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkTitle" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="NameId" Value="js-odata-query-page" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Note" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputAndSourceDisplay" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Sections" Value="ab990e8b-6b8a-43f1-ba2a-7bd34caf6f55" Type="Entity" />
+      <Value Key="ShareImage" Value="" Type="Hyperlink">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="&lt;p&gt;Use the 2sxc JS API to get Query Data with OData (new v21 ⭐)&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TitleForPicker" Value="js-odata-query-page - Use the 2sxc JS API to get Query Data with OData (new v21 ⭐)" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Variants" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="XxxLogo" Value="" Type="Hyperlink">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="38af8959-8662-4718-be05-4e5119d466a4" AttributeSetName="TutorialSnippet" EntityGUID="aa987519-d620-49d5-b714-633990e07fd7">
+      <Value Key="InDepthExplanation" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="InDepthImages" Value="" Type="Hyperlink" />
+      <Value Key="Intro" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreDyn" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreStrong" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreTyped" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Note" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputAndSourceDisplay" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputWidth" Value="33" Type="Number">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="PageActivate" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Tabs" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="&lt;p&gt;$select&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="ToolbarsForAnonymous" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialId" Value="js-odata-query-select" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialType" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="dfde1f60-e7bb-458e-8c06-cad18786e896" AttributeSetName="TutorialSnippetAddOn" EntityGUID="5fa61285-8d40-4129-ab21-74ff383cf722">
+      <Value Key="AddOnType" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="FilePath" Value="tutorials/js-data/Snip-query-select.Typed.cshtml" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="ShowFullFilePath" Value="True" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TabTitle" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TabTitleGeneration" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value=": tutorials/js-data/Snip-query-select.Typed.cshtml" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Variants" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="38af8959-8662-4718-be05-4e5119d466a4" AttributeSetName="TutorialSnippet" EntityGUID="ab990e8b-6b8a-43f1-ba2a-7bd34caf6f55">
+      <Value Key="InDepthExplanation" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="InDepthImages" Value="" Type="Hyperlink" />
+      <Value Key="Intro" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreDyn" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreStrong" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreTyped" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Note" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputAndSourceDisplay" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputWidth" Value="33" Type="Number">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="PageActivate" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Tabs" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="ToolbarsForAnonymous" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialId" Value="js-odata-query-select" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialType" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="908119e9-7383-4550-bca5-08864f5af456" AttributeSetName="TutorialGroup" EntityGUID="4720d7f5-9462-4add-b9aa-ad502a0a943a">
+      <Value Key="DefaultStateIsOpen" Value="True" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="HasVariants" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Intro" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreDyn" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreStrong" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreTyped" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IsPage" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkEmphasis" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkTeaser" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkTitle" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="NameId" Value="js-odata-query-page" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Note" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputAndSourceDisplay" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="ShareImage" Value="" Type="Hyperlink">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="&lt;p&gt;Use the 2sxc JS API to get Query Data with OData (new v21 ⭐)&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TitleForPicker" Value="js-odata-query-page - Use the 2sxc JS API to get Query Data with OData (new v21 ⭐)" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Variants" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="XxxLogo" Value="" Type="Hyperlink">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="908119e9-7383-4550-bca5-08864f5af456" AttributeSetName="TutorialGroup" EntityGUID="577fc4fa-bfdd-4fee-adb9-6bf397229e3f">
+      <Value Key="DefaultStateIsOpen" Value="True" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="HasVariants" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Intro" Value="&lt;p data-start=&quot;83&quot; data-end=&quot;196&quot;&gt;This page uses the 2sxc JS API to retrieve data from a Query endpoint using OData and display it with JavaScript.&lt;/p&gt;&#xA;&lt;p data-start=&quot;198&quot; data-end=&quot;235&quot;&gt;In this tutorial you'll learn how to:&lt;/p&gt;&#xA;&lt;ul data-start=&quot;237&quot; data-end=&quot;452&quot;&gt;&#xA;&lt;li data-section-id=&quot;13l9cy4&quot; data-start=&quot;237&quot; data-end=&quot;286&quot;&gt;&#xA;&lt;p data-start=&quot;239&quot; data-end=&quot;286&quot;&gt;Use the 2sxc JS API to access Query endpoints&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li data-section-id=&quot;n7ooxv&quot; data-start=&quot;287&quot; data-end=&quot;366&quot;&gt;&#xA;&lt;p data-start=&quot;289&quot; data-end=&quot;366&quot;&gt;Apply OData query options like &lt;code data-start=&quot;320&quot; data-end=&quot;329&quot;&gt;$filter&lt;/code&gt;, &lt;code data-start=&quot;331&quot; data-end=&quot;341&quot;&gt;$orderby&lt;/code&gt;, &lt;code data-start=&quot;343&quot; data-end=&quot;349&quot;&gt;$top&lt;/code&gt;, and &lt;code data-start=&quot;355&quot; data-end=&quot;364&quot;&gt;$select&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li data-section-id=&quot;13zblj1&quot; data-start=&quot;367&quot; data-end=&quot;410&quot;&gt;&#xA;&lt;p data-start=&quot;369&quot; data-end=&quot;410&quot;&gt;Read and inspect the returned JSON data&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li data-section-id=&quot;4r6vfz&quot; data-start=&quot;411&quot; data-end=&quot;452&quot;&gt;&#xA;&lt;p data-start=&quot;413&quot; data-end=&quot;452&quot;&gt;Work with Query results in JavaScript&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p data-start=&quot;454&quot; data-end=&quot;498&quot;&gt;Look at the content below to see the effect.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreDyn" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreStrong" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreTyped" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IsPage" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkEmphasis" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkTeaser" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkTitle" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="NameId" Value="js-data-query" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Note" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputAndSourceDisplay" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Sections" Value="8fd82535-2164-4c0b-8b2b-b3eefd55a337,fde21fe5-09d4-4066-9fc6-08b4f3032e98,c71426f6-0fdb-4d38-82c1-c2422d2f468d,a070860a-eacf-4af0-82c3-6b50d0cdcc11,04711915-9237-4596-8eed-6e802971637f" Type="Entity" />
+      <Value Key="ShareImage" Value="" Type="Hyperlink">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="&lt;p&gt;Use the 2sxc JS API to get Query Data with OData (new v21 ⭐)&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TitleForPicker" Value="js-data-query - Use the 2sxc JS API to get Query Data with OData (new v21 ⭐)" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Variants" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="XxxLogo" Value="" Type="Hyperlink">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="e4270019-2aef-494a-a7d1-7c8e981fba60" AttributeSetName="TutorialSpecs" EntityGUID="c4920680-c52f-48c9-9dfb-e4548e20bead">
+      <Value Key="Resources" Value="d4c22b44-990f-4a9e-ab51-51cb5ccdbaf3,3481d201-2f3e-481a-acea-de8e8ff629a8,df6bbbdd-4d50-423f-9632-eeb19f1c60f6" Type="Entity" />
+      <Value Key="Title" Value="Receive Data with OData" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="38af8959-8662-4718-be05-4e5119d466a4" AttributeSetName="TutorialSnippet" EntityGUID="8fd82535-2164-4c0b-8b2b-b3eefd55a337">
+      <Value Key="AddOns" Value="911b93c5-7e83-4c7c-a41f-5af73c98e455" Type="Entity" />
+      <Value Key="InDepthExplanation" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="InDepthImages" Value="" Type="Hyperlink" />
+      <Value Key="Intro" Value="&lt;p&gt;This example shows how to use the 2sxc API to select specific fields from query results using OData.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreDyn" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreStrong" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreTyped" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Note" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputAndSourceDisplay" Value="out-src" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputWidth" Value="33" Type="Number">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="PageActivate" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Tabs" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="&lt;p&gt;$select&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="ToolbarsForAnonymous" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialId" Value="js-data-query-select" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialType" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="908119e9-7383-4550-bca5-08864f5af456" AttributeSetName="TutorialGroup" EntityGUID="17006f61-6c57-48fc-a686-c30cfcf368d7">
+      <Value Key="DefaultStateIsOpen" Value="True" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="HasVariants" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Intro" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreDyn" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreStrong" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreTyped" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IsPage" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkEmphasis" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkTeaser" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="LinkTitle" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="NameId" Value="js-data-odata" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Note" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputAndSourceDisplay" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Sections" Value="f3021f40-72cb-42f0-99b8-4495febab6ca,ea5c21a2-b282-4774-b91f-581183bcecde,935fe34e-6389-4c9a-88cf-f9d017580267,13996a1e-d41a-4298-9020-11dd23bbded6,cc1116ac-cdd1-46f7-b295-dd092ddce85b" Type="Entity" />
+      <Value Key="ShareImage" Value="" Type="Hyperlink">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TitleForPicker" Value="js-data-odata - " Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Variants" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="XxxLogo" Value="" Type="Hyperlink">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="38af8959-8662-4718-be05-4e5119d466a4" AttributeSetName="TutorialSnippet" EntityGUID="fde21fe5-09d4-4066-9fc6-08b4f3032e98">
+      <Value Key="AddOns" Value="911b93c5-7e83-4c7c-a41f-5af73c98e455" Type="Entity" />
+      <Value Key="InDepthExplanation" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="InDepthImages" Value="" Type="Hyperlink" />
+      <Value Key="Intro" Value="&lt;p&gt;This example shows how to use the 2sxc API to filter query results using OData.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreDyn" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreStrong" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreTyped" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Note" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputAndSourceDisplay" Value="out-src" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputWidth" Value="33" Type="Number">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="PageActivate" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Tabs" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="&lt;p&gt;$filter&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="ToolbarsForAnonymous" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialId" Value="js-data-query-filter" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialType" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="38af8959-8662-4718-be05-4e5119d466a4" AttributeSetName="TutorialSnippet" EntityGUID="c71426f6-0fdb-4d38-82c1-c2422d2f468d">
+      <Value Key="AddOns" Value="6729c031-10ad-41b0-a04a-6e11a6a27fe7" Type="Entity" />
+      <Value Key="InDepthExplanation" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="InDepthImages" Value="" Type="Hyperlink" />
+      <Value Key="Intro" Value="&lt;p&gt;This example shows how to use the 2sxc API to sort query results using OData.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreDyn" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreStrong" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreTyped" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Note" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputAndSourceDisplay" Value="out-src" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputWidth" Value="33" Type="Number">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="PageActivate" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Tabs" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="&lt;p&gt;$orderby&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="ToolbarsForAnonymous" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialId" Value="js-data-query-orderby" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialType" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="38af8959-8662-4718-be05-4e5119d466a4" AttributeSetName="TutorialSnippet" EntityGUID="a070860a-eacf-4af0-82c3-6b50d0cdcc11">
+      <Value Key="AddOns" Value="911b93c5-7e83-4c7c-a41f-5af73c98e455" Type="Entity" />
+      <Value Key="InDepthExplanation" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="InDepthImages" Value="" Type="Hyperlink" />
+      <Value Key="Intro" Value="&lt;p&gt;This example shows how to use the 2sxc API to limit query results using OData.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreDyn" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreStrong" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreTyped" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Note" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputAndSourceDisplay" Value="out-src" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputWidth" Value="33" Type="Number">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="PageActivate" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Tabs" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="&lt;p&gt;$top&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="ToolbarsForAnonymous" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialId" Value="js-data-query-top" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialType" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="38af8959-8662-4718-be05-4e5119d466a4" AttributeSetName="TutorialSnippet" EntityGUID="04711915-9237-4596-8eed-6e802971637f">
+      <Value Key="AddOns" Value="911b93c5-7e83-4c7c-a41f-5af73c98e455" Type="Entity" />
+      <Value Key="InDepthExplanation" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="InDepthImages" Value="" Type="Hyperlink" />
+      <Value Key="Intro" Value="&lt;p&gt;This example shows how to use the 2sxc API to skip items in query results using OData.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreDyn" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreStrong" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="IntroMoreTyped" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Note" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputAndSourceDisplay" Value="out-src" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="OutputWidth" Value="33" Type="Number">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="PageActivate" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Tabs" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="&lt;p&gt;$skip&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="ToolbarsForAnonymous" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialId" Value="js-data-query-skip" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TutorialType" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="dfde1f60-e7bb-458e-8c06-cad18786e896" AttributeSetName="TutorialSnippetAddOn" EntityGUID="6729c031-10ad-41b0-a04a-6e11a6a27fe7">
+      <Value Key="AddOnType" Value="file" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="FilePath" Value="tutorials/js-data/js/get-query-odata.js" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="ShowFullFilePath" Value="True" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TabTitle" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TabTitleGeneration" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="file: tutorials/js-data/js/get-query-odata.js" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Variants" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="dfde1f60-e7bb-458e-8c06-cad18786e896" AttributeSetName="TutorialSnippetAddOn" EntityGUID="0124103c-2b25-4daf-91d9-67cbaa75adb3">
+      <Value Key="AddOnType" Value="file" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="FilePath" Value="tutorials/js-data/js/get-data-odata.js" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="ShowFullFilePath" Value="True" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TabTitle" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TabTitleGeneration" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="file: tutorials/js-data/js/get-data-odata.js" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Variants" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="52ea0fb1-3520-4114-a4de-c9aba43738cb" Json="True" KeyGuid="f8fd2593-6ca7-40f9-877e-ca95a2a3760c">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="App" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="ToSic.Eav.DataSources.App, ToSic.Eav.DataSources" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 660,&#xD;&#xA;  &quot;Left&quot;: 380&#xD;&#xA;}" Type="String" />
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="056582ed-dbe0-41a9-847f-592cf1d5a5a7" Json="True" KeyGuid="f8fd2593-6ca7-40f9-877e-ca95a2a3760c">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="Sort Authors" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="ToSic.Eav.DataSources.ValueSort, ToSic.Eav.DataSources" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 400,&#xD;&#xA;  &quot;Left&quot;: 580&#xD;&#xA;}" Type="String" />
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="750e379e-954b-4b4a-b771-ea66a8e86534" Json="True" KeyGuid="f8fd2593-6ca7-40f9-877e-ca95a2a3760c">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="Filter Books of Author" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="ToSic.Eav.DataSources.RelationshipFilter, ToSic.Eav.DataSources" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 160,&#xD;&#xA;  &quot;Left&quot;: 40&#xD;&#xA;}" Type="String" />
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="84b83d4a-5b12-47c7-ad68-321252d3f247" Json="True" KeyGuid="f8fd2593-6ca7-40f9-877e-ca95a2a3760c">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="Id Filter Find Author" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="ToSic.Eav.DataSources.EntityIdFilter, ToSic.Eav.DataSources" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 400,&#xD;&#xA;  &quot;Left&quot;: 320&#xD;&#xA;}" Type="String" />
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="3770b915-4cec-4e61-88b2-cfb5b2394eef" Json="True" KeyGuid="f8fd2593-6ca7-40f9-877e-ca95a2a3760c">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="Paging" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="ToSic.Eav.DataSources.Paging, ToSic.Eav.DataSources" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 160,&#xD;&#xA;  &quot;Left&quot;: 560&#xD;&#xA;}" Type="String" />
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="4071f542-6984-41fe-b8ab-d083f3e307f9" Json="True" KeyGuid="f8fd2593-6ca7-40f9-877e-ca95a2a3760c">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="Shuffle" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="ToSic.Eav.DataSources.Shuffle, ToSic.Eav.DataSources" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 160,&#xD;&#xA;  &quot;Left&quot;: 820&#xD;&#xA;}" Type="String" />
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="|Config ToSic.Eav.DataSources.ValueSort" AttributeSetName="ToSic.Eav.DataSources.ValueSort" EntityGUID="305cabbd-f297-4bc9-bb9a-d361d4520502" Json="True" KeyGuid="056582ed-dbe0-41a9-847f-592cf1d5a5a7">
+      <Value Key="Attributes" Value="LastName" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Directions" Value="asc" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="|Config ToSic.Eav.DataSources.RelationshipFilter" AttributeSetName="ToSic.Eav.DataSources.RelationshipFilter" EntityGUID="ee58d9d2-cd71-40f8-96fd-b87296e3a204" Json="True" KeyGuid="750e379e-954b-4b4a-b771-ea66a8e86534">
+      <Value Key="AttributeOnRelationship" Value="EntityId" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Comparison" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Filter" Value="[In:Author:EntityId]" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Relationship" Value="Authors" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Separator" Value="" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Find books of the current author in url" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="|Config ToSic.Eav.DataSources.EntityIdFilter" AttributeSetName="ToSic.Eav.DataSources.EntityIdFilter" EntityGUID="bd5057a6-086d-4b32-9408-1966777be3c8" Json="True" KeyGuid="84b83d4a-5b12-47c7-ad68-321252d3f247">
+      <Value Key="EntityIds" Value="[Params:AuthorId]" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="|Config ToSic.Eav.DataSources.Paging" AttributeSetName="ToSic.Eav.DataSources.Paging" EntityGUID="f113104f-049c-41a5-98c0-5ee5f7820b58" Json="True" KeyGuid="3770b915-4cec-4e61-88b2-cfb5b2394eef">
+      <Value Key="PageNumber" Value="[Params:CurrentAuthorPage]" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="PageSize" Value="[Params:AuthorPageResults]" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Paging data source" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="38e7822b-1049-4539-bb3f-f99949b1b1d1" AttributeSetName="ToSic.Eav.DataSources.Shuffle" EntityGUID="fa95009d-0ac0-4696-b064-85dc4fff2065" Json="True" KeyGuid="4071f542-6984-41fe-b8ab-d083f3e307f9">
+      <Value Key="Take" Value="1" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="DataPipeline" AttributeSetName="DataPipeline" EntityGUID="f8fd2593-6ca7-40f9-877e-ca95a2a3760c" Json="True">
+      <Value Key="AllowEdit" Value="True" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="Get all authors and the books of the current author - used in OData" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="HiddenInQueryPicker" Value="False" Type="Boolean">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Name" Value="Authors" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="Params" Value="AuthorId=[QueryString:AuthorId]&#xA;AuthorPageResults=[QueryString:AuthorPageResults]&#xA;CurrentAuthorPage=[QueryString:CurrentAuthorPage]" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="StreamsOut" Value="Default,Header,Authors,CurrentBooks,Current,AuthorsByPage,RandomAuthor" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="StreamWiring" Value="52ea0fb1-3520-4114-a4de-c9aba43738cb:Persons&gt;056582ed-dbe0-41a9-847f-592cf1d5a5a7:Default&#xD;&#xA;056582ed-dbe0-41a9-847f-592cf1d5a5a7:Default&gt;Out:Authors&#xD;&#xA;52ea0fb1-3520-4114-a4de-c9aba43738cb:Books&gt;750e379e-954b-4b4a-b771-ea66a8e86534:Default&#xD;&#xA;750e379e-954b-4b4a-b771-ea66a8e86534:Default&gt;Out:CurrentBooks&#xD;&#xA;52ea0fb1-3520-4114-a4de-c9aba43738cb:Persons&gt;84b83d4a-5b12-47c7-ad68-321252d3f247:Default&#xD;&#xA;84b83d4a-5b12-47c7-ad68-321252d3f247:Default&gt;Out:Current&#xD;&#xA;84b83d4a-5b12-47c7-ad68-321252d3f247:Default&gt;750e379e-954b-4b4a-b771-ea66a8e86534:Author&#xD;&#xA;056582ed-dbe0-41a9-847f-592cf1d5a5a7:Default&gt;3770b915-4cec-4e61-88b2-cfb5b2394eef:Default&#xD;&#xA;3770b915-4cec-4e61-88b2-cfb5b2394eef:Default&gt;Out:AuthorsByPage&#xD;&#xA;056582ed-dbe0-41a9-847f-592cf1d5a5a7:Default&gt;4071f542-6984-41fe-b8ab-d083f3e307f9:Default&#xD;&#xA;4071f542-6984-41fe-b8ab-d083f3e307f9:Default&gt;Out:RandomAuthor" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="TestParameters" Value="[Params:AuthorId]=20068&#xA;[Params:AuthorPageResults]=2&#xA;[Params:CurrentAuthorPage]=1" Type="String">
+        <Dimension DimensionID="141" ReadOnly="false" />
+      </Value>
+      <Value Key="VisualDesignerData" Value="{&quot;ShowDataSourceDetails&quot;:true}" Type="String">
         <Dimension DimensionID="141" ReadOnly="false" />
       </Value>
     </Entity>

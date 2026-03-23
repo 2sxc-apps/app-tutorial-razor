@@ -8,7 +8,7 @@
    * load query data and render one stream into a table.
    */
   function load(specs) {
-    const { moduleId, outputId, stream = "Current", ...inputParams } = specs;
+    const { moduleId, outputId, stream = "Current", ...params } = specs;
 
     const sxc = $2sxc(moduleId);
 
@@ -17,15 +17,25 @@
       throw new Error(`Output element with id ${outputId} not found`);
 
     // Show the url in the UI - note: uses global helper loaded in another JS file
-    window.tutOutputHelpers.showUrl(sxc, outputElement, inputParams, stream);
+    window.tutOutputHelpers.showUrl(sxc, outputElement, params, stream);
 
-    // sxc.query('AuthorsWithBooks').getStream(stream, inputParams).then((data) => {
-    //   console.log('2dm', data);
-    //   renderTable(data?.[stream], outputElement);
-    // });
+    // const wafma = {
+    //   // '&x': 'x',
+    //   // 'a': 'a',
+    //   ...inputParams,
+    // }
+
+    sxc.query('AuthorsWithBooks').getStream(stream, params).then((data) => {
+      console.log('2dm', data);
+      window.tutOutputHelpers.showData(data, outputElement);
+    });
+    sxc.query('AuthorsWithBooks').getAll(params).then((data) => {
+      console.log('2dm', data);
+      window.tutOutputHelpers.showData(data?.[stream], outputElement);
+    });
 
     console.log('2dm new');
-    const url = buildQueryUrl(sxc, inputParams, stream);
+    const url = buildQueryUrl(sxc, params, stream);
 
     sxc.webApi.fetchJson(url).then((data) => {
       window.tutOutputHelpers.showData(data?.[stream], outputElement);
