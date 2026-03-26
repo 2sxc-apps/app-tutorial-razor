@@ -74,6 +74,9 @@
     .ToArray();
   foreach (var config in collectConfigs) 
     Kit.PageShield.LoadConfiguration(config);
+
+  // specify variants for now - global
+  Kit.PageShield.Allow("variant", "dyn,typed,strong");
 }
 @Kit.PageShield.Enforce(Link)
 

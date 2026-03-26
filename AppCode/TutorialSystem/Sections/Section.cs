@@ -82,6 +82,9 @@ namespace AppCode.TutorialSystem.Sections
         _ => "Unknown"
       };
       var tutIdPath = new TutorialIdToPath(TutorialId, "").FullPath;
+
+      var urlParams = Item.PageShieldUrlParameters;
+
       return TagsSvc.H2().Class("accordion-header").Id(HeadingId).Wrap(
         "\n",
         Indent2,
@@ -96,6 +99,10 @@ namespace AppCode.TutorialSystem.Sections
             Item.String("Title", scrubHtml: "p"),
             Acc.MyUser.IsSystemAdmin
               ? TagsSvc.Span(
+                  string.IsNullOrWhiteSpace(urlParams)
+                    ? "" as object
+                    : TagsSvc.Span("🖇️ ")
+                      .Title(urlParams),
                   Text.Ellipsis(tutIdPath.Replace("tutorials/", ""), 50),
                   TagsSvc.Span("ℹ️"),
                   TagsSvc.Span(variantIcon).Title(variantTitle)
