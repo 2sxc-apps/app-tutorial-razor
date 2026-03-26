@@ -23,6 +23,7 @@
     return;
   }
 }
+@Kit.PageShield.Allow("tut")
 @{
   var myParams = MyPage.Parameters;
   
@@ -72,3 +73,6 @@
   @* Get the toolbar for: < previous | # Current | Next > *@
   @Html.Partial("./Page.Part Navigation.cshtml", headNavData)
 </div>
+
+@* Enforce Page Shield Rules - Redirect if url parameters seem off *@
+@Kit.PageShield.Enforce(Link)

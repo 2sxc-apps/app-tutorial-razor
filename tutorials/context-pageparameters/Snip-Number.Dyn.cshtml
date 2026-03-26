@@ -14,6 +14,10 @@
 </ul>
 <hr>
 </hide-silent>
+
+@* Configure Page-Shield (optional) - see https://go.2sxc.org/pageshield *@
+@Kit.PageShield.Allow("id")
+
 @{
   // This variable is a string, but could be null or empty
   var idAsString = CmsContext.Page.Parameters["id"];

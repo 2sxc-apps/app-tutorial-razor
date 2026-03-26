@@ -1,6 +1,9 @@
 @inherits Custom.Hybrid.Razor14
 @using ToSic.Razor.Blade
 
+@* Configure Page-Shield (optional) - see https://go.2sxc.org/pageshield *@
+@Kit.PageShield.Allow("sort", "ascending,descending")
+
 <p>
   FYI: The current url parameters are <br>
   <code>@CmsContext.Page.Parameters</code>
@@ -9,7 +12,7 @@
 <p>Links to test the functionality</p>
 <ul>
   <li><a href='@Link.To(parameters: CmsContext.Page.Parameters.Remove("sort"))'>This page without <code>sort</code> url-parameter</a></li>
-  <li><a href='@Link.To(parameters: CmsContext.Page.Parameters.Set("sort", "Ascending"))'>This page with additional <code>sort=ascending</code></a></li>
+  <li><a href='@Link.To(parameters: CmsContext.Page.Parameters.Set("sort", "ascending"))'>This page with additional <code>sort=ascending</code></a></li>
 </ul>
 
 

@@ -2,9 +2,15 @@
 @using ToSic.Razor.Blade
 @using AppCode.TutorialSystem
 @using AppCode.TutorialSystem.Razor
+@using ToSic.Razor.Html5
 @{
+  // This page is only shown, if something detects variants
+
   var variantButtons = GetService<VariantsService>().GetVariantButtons(Model.Variants, Model.Current);
 }
+@* Enable variants parameter on this page *@
+@Kit.PageShield.Allow("variant", string.Join(",", variantButtons.Select(v => v.Id)))
+
 <!-- Variants: @Model.Variants -->
 <div class="alert alert-info">
   The samples can differ based on your Razor base class or if you're running an old version. <br>
