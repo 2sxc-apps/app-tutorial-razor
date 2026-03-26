@@ -3,6 +3,7 @@
 @using AppCode.Data
 @using AppCode.TutorialSystem.Razor
 @using AppCode.Tutorial
+@using ToSic.Sxc.Demo
 @* Catch invalid links, wherever they come from *@
 @{
   // Background: for some reasons we seem to have links which drop the "/tut" and a lot of xyz=tut - which is the reverse of what's expected.
@@ -74,6 +75,10 @@
     .ToArray();
   foreach (var config in collectConfigs) 
     Kit.PageShield.LoadConfiguration(config);
+
+  // Special override of priorities - patch solution
+  // should be improved later on, when this can be configured
+  MyPage.UpdateParameters(MyPage.Parameters.Prioritize("tut,variant"));
 
   // specify variants for now - global
   Kit.PageShield.Allow("variant", "dyn,typed,strong");
