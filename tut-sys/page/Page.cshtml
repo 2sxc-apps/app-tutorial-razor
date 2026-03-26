@@ -76,10 +76,6 @@
   foreach (var config in collectConfigs) 
     Kit.PageShield.LoadConfiguration(config);
 
-  // Special override of priorities - patch solution
-  // should be improved later on, when this can be configured
-  // MyPage.UpdateParameters(MyPage.Parameters.Prioritize("tut,variant"));
-
   // specify variants for now - global
   Kit.PageShield.Allow("variant", "dyn,typed,strong");
 }
