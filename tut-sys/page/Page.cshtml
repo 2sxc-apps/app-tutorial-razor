@@ -59,6 +59,24 @@
 
   SetOpenGraph(tutPage);
 }
+
+@* Enforce Page Shield Rules - Redirect if url parameters seem off *@
+@{
+  // Set PageShield from configuration
+  var allSnippets = tutPage.Accordions
+    .SelectMany(a => a.Sections)
+    .Concat(tutPage.Sections)
+    .ToList();
+
+  var collectConfigs = allSnippets.Select(s => s.PageShieldUrlParameters)
+    .Where(p => !string.IsNullOrWhiteSpace(p))
+    .Distinct()
+    .ToArray();
+  foreach (var config in collectConfigs) 
+    Kit.PageShield.LoadConfiguration(config);
+}
+@Kit.PageShield.Enforce(Link)
+
 @* Note that the data-enhance-nav="false" is for Oqtane 5.1.2 which has major problems loading JS - ask @iJungleboy *@
 <div data-enhance-nav="false">
   @Html.Partial("./Page.Part Header.cshtml", headNavData)
@@ -73,6 +91,3 @@
   @* Get the toolbar for: < previous | # Current | Next > *@
   @Html.Partial("./Page.Part Navigation.cshtml", headNavData)
 </div>
-
-@* Enforce Page Shield Rules - Redirect if url parameters seem off *@
-@Kit.PageShield.Enforce(Link)
