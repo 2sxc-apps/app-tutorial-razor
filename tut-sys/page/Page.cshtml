@@ -78,12 +78,12 @@
 
   // Special override of priorities - patch solution
   // should be improved later on, when this can be configured
-  MyPage.UpdateParameters(MyPage.Parameters.Prioritize("tut,variant"));
+  // MyPage.UpdateParameters(MyPage.Parameters.Prioritize("tut,variant"));
 
   // specify variants for now - global
   Kit.PageShield.Allow("variant", "dyn,typed,strong");
 }
-@Kit.PageShield.Enforce(Link)
+@Kit.PageShield.Enforce(Link, "tut,variant")
 
 @* Note that the data-enhance-nav="false" is for Oqtane 5.1.2 which has major problems loading JS - ask @iJungleboy *@
 <div data-enhance-nav="false">

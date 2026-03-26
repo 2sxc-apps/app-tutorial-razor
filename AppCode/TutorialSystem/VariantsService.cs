@@ -17,7 +17,8 @@ namespace AppCode.TutorialSystem
               var variantIsSelected = variant == current;
               var classes = variantIsSelected ? "btn btn-success" : "btn btn-primary";
               var newVariant = variantIsSelected ? "" : variant;
-              var href = variantIsSelected ? "#" : Link.To(parameters: MyPage.Parameters.Set(Variants.VariantUrlParameter, newVariant));
+              var parameters = MyPage.Parameters.Set(Variants.VariantUrlParameter, newVariant).Prioritize("tut,variant");
+              var href = variantIsSelected ? "#" : Link.To(parameters: parameters);
               var label = "";
               switch (variant)
               {
