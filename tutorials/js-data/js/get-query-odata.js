@@ -6,7 +6,7 @@
    * load query data and render one stream into a table.
    */
   function load(specs) {
-    const { moduleId, outputId, stream = "Current", ...params } = specs;
+    const { moduleId, outputId, query = 'ODataAuthors', stream, ...params } = specs;
 
     const sxc = $2sxc(moduleId);
 
@@ -19,9 +19,15 @@
 
     // Get a specific stream
     // relevant for this demo, as we want to the "Authors" stream, not the "Default"
-    sxc.query('AuthorsWithBooks').getStream(stream, params).then((data) => {
-      window.tutOutputHelpers.showData(data, outputElement);
-    });
+    if (stream)
+      sxc.query(query).getStream(stream, params).then((data) => {
+        window.tutOutputHelpers.showData(data, outputElement);
+      });
+    // No stream means we want the "Default" stream - which is what you get when you use the API without streams
+    else
+      sxc.query(query).getAll(params).then((data) => {
+        window.tutOutputHelpers.showData(data.Default, outputElement);
+      });
   }
 
   // Expose API globally for the tutorial buttons

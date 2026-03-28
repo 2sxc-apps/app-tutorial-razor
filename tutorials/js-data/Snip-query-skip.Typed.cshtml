@@ -7,21 +7,20 @@
   const specsQuerySkipDemo = {
     moduleId: @MyContext.Module.Id,
     outputId: "query-skip-output-@UniqueKey",
-    stream: "Authors"
+    query: "ODataAuthors",
+    '$skip': 2,
+    '$select': 'FirstName,LastName,Birthday', // add select so table is easier to read
   };
 </script>
 
 <button type="button" class="btn btn-primary"
   onclick="window.tutQueryOdata.load(specsQuerySkipDemo)">
-  Load query results
+  ODataAuthors.Default with $skip
 </button>
 
 <button type="button" class="btn btn-primary"
-  onclick="window.tutQueryOdata.load({
-    ...specsQuerySkipDemo,
-    '$skip': 2
-  })">
-  Load with $skip
+  onclick="window.tutQueryOdata.load({...specsQuerySkipDemo, stream: 'Sorted'})">
+  ODataAuthors.Sorted with $skip
 </button>
 
 <div style="overflow-x:auto;" id="query-skip-output-@UniqueKey">

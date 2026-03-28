@@ -1,28 +1,41 @@
 @inherits Custom.Hybrid.RazorTyped
 @using ToSic.Razor.Blade
 
-@* Make sure anonymous users have the 2sxc JS API *@
+@* Make sure all users have the 2sxc JS API *@
 @Kit.Page.Activate("2sxc.JsCore")
 
 <script>
-  const specsQuerySelectDemo = {
+  const demoQuery = {
     moduleId: @MyContext.Module.Id,
     outputId: "query-select-output-@UniqueKey",
-    stream: "Authors"
+    query: "ODataAuthors"
+  };
+  const demoSelect = {
+    moduleId: @MyContext.Module.Id,
+    outputId: "query-select-output-@UniqueKey",
+    query: "ODataAuthors",
+    '$select': 'FirstName,LastName,Birthday'
   };
 </script>
 
 <button type="button" class="btn btn-primary"
-  onclick="window.tutQueryOdata.load(specsQuerySelectDemo)">
-  Load query results
+  onclick="window.tutQueryOdata.load(demoQuery)">
+  ODataAuthors.Default (without OData)
 </button>
 
 <button type="button" class="btn btn-primary"
-  onclick="window.tutQueryOdata.load({
-    ...specsQuerySelectDemo,
-    '$select': 'FirstName,LastName,Birthday'
-  })">
-  Load with $select
+  onclick="window.tutQueryOdata.load({...demoQuery, stream: 'Sorted'})">
+  ODataAuthors.Sorted (without OData)
+</button>
+
+<button type="button" class="btn btn-primary"
+  onclick="window.tutQueryOdata.load(demoSelect)">
+  ODataAuthors.Default with $select
+</button>
+
+<button type="button" class="btn btn-primary"
+  onclick="window.tutQueryOdata.load({...demoSelect, stream: 'Sorted'})">
+  ODataAuthors.Sorted with $select
 </button>
 
 <div style="overflow-x:auto;" id="query-select-output-@UniqueKey">

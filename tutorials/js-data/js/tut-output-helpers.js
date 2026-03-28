@@ -69,23 +69,25 @@
   }
 
   /**
-   * Build the query URL
+   * Build the query URL for displaying to the user.
+   * This is not used for the actual query, but just to show the user what URL is being called.
    */
   function buildUrl(sxc, inputParams, stream) {
     let params = {};
 
     // copy params and do ???
-    if (stream)
-      Object.entries(inputParams).forEach(([key, value]) => {
-        if (value == null || value === "")
-          return;
-        params[key.startsWith("$") ? `${stream}${key}` : key] = value;
-      });
-    else
+    // if (stream)
+    //   Object.entries(inputParams).forEach(([key, value]) => {
+    //     if (value == null || value === "")
+    //       return;
+    //     params[key.startsWith("$") ? `${stream}${key}` : key] = value;
+    //   });
+    // else
       params = inputParams;
 
+
     const url = sxc.webApi
-      .url(`app/auto/data/Poets`, params)
+      .url(`app/auto/data/Poets${(stream ? '/' + stream : '')}`, params)
       .replace(/%24/g, "$")
       .replace(/%2C/g, ",");
 
@@ -98,6 +100,6 @@
   window.tutOutputHelpers = window.tutOutputHelpers || {
     showData,
     showUrl,
-    buildUrl,
+    // buildUrl, // exposed for testing purposes, but not needed for the tutorial itself
   };
 })();

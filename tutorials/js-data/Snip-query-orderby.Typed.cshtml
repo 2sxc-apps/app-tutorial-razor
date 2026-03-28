@@ -4,24 +4,23 @@
 @Kit.Page.Activate("2sxc.JsCore")
 
 <script>
-  const specsQueryOrderDemo = {
+  const demoOrderBy = {
     moduleId: @MyContext.Module.Id,
     outputId: "query-order-output-@UniqueKey",
-    stream: "Authors"
+    query: "ODataAuthors",
+    '$orderby': 'FirstName',
+    '$select': 'FirstName,LastName,Birthday', // add select so table is easier to read
   };
 </script>
 
 <button type="button" class="btn btn-primary"
-  onclick="window.tutQueryOdata.load(specsQueryOrderDemo)">
-  Load query results
+  onclick="window.tutQueryOdata.load(demoOrderBy)">
+  ODataAuthors.Default with $orderby
 </button>
 
 <button type="button" class="btn btn-primary"
-  onclick="window.tutQueryOdata.load({
-    ...specsQueryOrderDemo,
-    '$orderby': 'FirstName',
-  })">
-  Load with $orderby
+  onclick="window.tutQueryOdata.load({...demoOrderBy, stream: 'Sorted'})">
+  ODataAuthors.Sorted with $orderby
 </button>
 
 <div style="overflow-x:auto;" id="query-order-output-@UniqueKey">

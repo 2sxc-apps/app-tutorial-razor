@@ -7,21 +7,20 @@
   const specsQueryTopDemo = {
     moduleId: @MyContext.Module.Id,
     outputId: "query-top-output-@UniqueKey",
-    stream: "Authors"
+    query: "ODataAuthors",
+    '$top': 3,
+    '$select': 'FirstName,LastName,Birthday', // add select so table is easier to read
   };
 </script>
 
 <button type="button" class="btn btn-primary"
   onclick="window.tutQueryOdata.load(specsQueryTopDemo)">
-  Load query results
+  ODataAuthors.Default with $top
 </button>
 
 <button type="button" class="btn btn-primary"
-  onclick="window.tutQueryOdata.load({
-    ...specsQueryTopDemo,
-    '$top': 3
-  })">
-  Load with $top
+  onclick="window.tutQueryOdata.load({...specsQueryTopDemo, stream: 'Sorted'})">
+  ODataAuthors.Sorted with $top
 </button>
 
 <div style="overflow-x:auto;" id="query-top-output-@UniqueKey">

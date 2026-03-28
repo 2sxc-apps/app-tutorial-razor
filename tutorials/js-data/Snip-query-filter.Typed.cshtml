@@ -4,25 +4,23 @@
 @Kit.Page.Activate("2sxc.JsCore")
 
 <script>
-  const specsQueryFilterDemo = {
+  const demoFilter = {
     moduleId: @MyContext.Module.Id,
     outputId: "query-filter-output-@UniqueKey",
-    stream: "Authors"
-  };
-  const withFilter = {
-    ...specsQueryFilterDemo,
-    '$filter': "FirstName eq 'Douglas'"
+    query: "ODataAuthors",
+    '$filter': "FirstName eq 'Douglas'",
+    '$select': 'FirstName,LastName,Birthday', // add select so table is easier to read
   };
 </script>
 
 <button type="button" class="btn btn-primary"
-  onclick="window.tutQueryOdata.load(specsQueryFilterDemo)">
-  Load query results
+  onclick="window.tutQueryOdata.load(demoFilter)">
+  ODataAuthors.Default with $filter
 </button>
 
 <button type="button" class="btn btn-primary"
-  onclick="window.tutQueryOdata.load(withFilter)">
-  Load with $filter
+  onclick="window.tutQueryOdata.load({...demoFilter, stream: 'Sorted'})">
+  ODataAuthors.Sorted with $filter
 </button>
 
 <div style="overflow-x:auto;" id="query-filter-output-@UniqueKey">
