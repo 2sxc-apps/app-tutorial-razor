@@ -1,9 +1,6 @@
 @inherits Custom.Hybrid.RazorTyped
 @using ToSic.Razor.Blade
 
-@* Configure Page-Shield (optional) - see https://go.2sxc.org/pageshield *@
-@* @Kit.PageShield.Allow("sort", "ascending,descending") *@
-
 <p>Links to test the functionality</p>
 <ul>
   <li><a href='@Link.To(parameters: MyPage.Parameters.Remove("sort"))'>This page without <code>sort</code> url-parameter</a></li>
