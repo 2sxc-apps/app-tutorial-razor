@@ -79,7 +79,7 @@
   // specify variants for now - global
   Kit.PageShield.Allow("variant", "dyn,typed,strong");
 }
-@Kit.PageShield.Enforce(Link, "tut,variant")
+@Kit.PageShield.Enforce(prioritizeParameters: "tut,variant")
 
 @* Note that the data-enhance-nav="false" is for Oqtane 5.1.2 which has major problems loading JS - ask @iJungleboy *@
 <div data-enhance-nav="false">
