@@ -37,6 +37,11 @@ Please follow the [guide](https://docs.2sxc.org/abyss/contribute/tutorials/index
 
 ## History
 
+### 2026-05-20
+
+1. 2dm/2rb: pushed odata tutorial update by 2rb which was dormant
+1. 2dm: fix some toolbar buttons appearing on tabs when toolbar-demo-mode was enabled
+
 ### 2026-03-12
 
 1. 2dm: Improve exception handling so a broken snip doesn't break the entire page (otherwise accordions are inside the last broken accordion)

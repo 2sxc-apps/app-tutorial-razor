@@ -3,18 +3,18 @@
 
 <h3>Hello World Example</h3>
 @{
-    var helloDs = Kit.Data.GetSource<HelloWorldDataSource>();
-    var helloWorld = AsItem(helloDs);
+  var helloDs = Kit.Data.GetSource<HelloWorldDataSource>();
+  var helloWorld = AsItem(helloDs);
 }
 @if (helloWorld == null)
 {
-    <p>No data available</p>
-    return;
+  <p>No data available</p>
+  return;
 }
 
 <ul>
-    <li>
-        <strong>Message:</strong>
-        @helloWorld.String("Message")
-    </li>
+  <li>
+    <strong>Message:</strong>
+    @helloWorld.String("Message")
+  </li>
 </ul>

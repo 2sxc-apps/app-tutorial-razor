@@ -3,6 +3,8 @@ using ToSic.Razor.Html5;
 using ToSic.Razor.Markup;
 using System.Collections.Generic;
 using AppCode.Data;
+using ToSic.Sxc.Edit.Toolbar;
+using System.Linq;
 
 // 2sxclint:disable:no-Presentation-in-quotes - it's just used as a css-class below
 
@@ -17,45 +19,23 @@ namespace AppCode.TutorialSystem.Tabs
     private const string IndentBtn = "        ";
 
     public ITag TabList(TutorialSnippet item, string prefix, List<TabSpecs> tabs, TabSpecs active) /* string active = null) */ {
-      var tabList = new List<object>();
-      foreach (var tab in tabs) {
-        var isFirst = tabList.Count == 0;
-        var isActive = (active == null && isFirst) || tab.DisplayName == active.DisplayName;
+      var tabList = tabs
+        .SelectMany((tab, index) => {
+          // first entry is active = true
+          var isActive = (active == null && index == 0) || tab.DisplayName == active.DisplayName;
 
-        tabList.Add("\n\n" + IndentLi + "<!-- Tab '" + tab.DisplayName + "'-->");
-        tabList.Add("\n" + IndentLi);
+          // Generate button, and toolbar to edit/create the add-on definition
+          var tlb = GenerateTabToolbar(tab, item);
+          var tabLi = TabLi(tab, prefix, isActive).Attr(tlb);
 
-        // Generate button, and toolbar to edit/create the add-on definition
-        var tabLi = TabLi(tab, prefix, isActive);
-        if (tab.AddOn != null)
-          tabLi = tabLi.Attr(Kit.Toolbar.Edit(tab.AddOn));
-        else {
-          // Create a toolbar to convert the current code-based tab into an add-on, pre-filling the file path and type
-          // But skip for Output-tabs
-          if (tab.Type != TabType.Results && tab.Type != TabType.ResultsAndSource && tab.Type != TabType.Source && tab.Type != TabType.TutorialReferences && tab.Type != TabType.InDepth)
-          {
-            var tlb = Kit.Toolbar.Empty().New(
-              item.AddOns,
-              tweak: t => {
-                // set new type
-                t = t.Prefill(nameof(TutorialSnippetAddOn.AddOnType), tab.ToAddOnType());
+          return new object[] { 
+            "\n\n" + IndentLi + "<!-- Tab '" + tab.DisplayName + "'-->",
+            "\n" + IndentLi,
+            tabLi,
+          };
+        })
+        .ToList();
 
-                t = t.Prefill("test", tab.Type.ToString());
-
-                // If code-based, prefill the title, otherwise prefill the file path
-                if (tab.Type == TabType.FromCode)
-                  t = t.Prefill(nameof(TutorialSnippetAddOn.TabTitle), tab.Label);
-                else if (tab.Type != TabType.ViewConfig)
-                  t = t.Prefill(nameof(TutorialSnippetAddOn.FilePath), tab.Value);
-                  
-                return t;
-              }
-            );
-            tabLi = tabLi.Attr(tlb);
-          }
-        }
-        tabList.Add(tabLi); // first entry is active = true
-      }
       return Tag.RawHtml(
         "\n" + Indent + "<!-- TabList Start '" + prefix + "'-->\n",
         Indent,
@@ -66,6 +46,50 @@ namespace AppCode.TutorialSystem.Tabs
       );
     }
 
+    private IToolbarBuilder GenerateTabToolbar(TabSpecs tab, TutorialSnippet item)
+    {
+      // Special check: these buttons could appear in the UI for anonymous
+      // as a side-effect of the demo-mode.
+      // It's not quite clear why, as the demo-mode should be disabled
+      // but it's probably a timing issue, when the disabled is triggered again etc.
+      // So we're doing an extra check before adding the toolbar
+      if (!MyUser.IsContentEditor)
+        return null;
+      
+      if (tab.AddOn != null)
+        return Kit.Toolbar.Edit(tab.AddOn);
+
+      // Create a toolbar to convert the current code-based tab into an add-on, pre-filling the file path and type
+      // But skip for Output-tabs
+      if (tab.Type != TabType.Results
+        && tab.Type != TabType.ResultsAndSource
+        && tab.Type != TabType.Source
+        && tab.Type != TabType.TutorialReferences
+        && tab.Type != TabType.InDepth
+      )
+      {
+        var tlb = Kit.Toolbar.Empty().New(
+          item.AddOns,
+          tweak: t => {
+            // set new type
+            t = t.Prefill(nameof(TutorialSnippetAddOn.AddOnType), tab.ToAddOnType());
+
+            // 2026-05-20 2dm unclear what this was for, probably really just a test?
+            // t = t.Prefill("test", tab.Type.ToString());
+
+            // If code-based, prefill the title, otherwise prefill the file path
+            if (tab.Type == TabType.FromCode)
+              t = t.Prefill(nameof(TutorialSnippetAddOn.TabTitle), tab.Label);
+            else if (tab.Type != TabType.ViewConfig)
+              t = t.Prefill(nameof(TutorialSnippetAddOn.FilePath), tab.Value);
+              
+            return t;
+          }
+        );
+        return tlb;
+      }
+      return null;
+    }
 
     private Li TabLi(TabSpecs tab, string prefix, bool active) {
       return Tag.Li().Class("nav-item").Attr("role", "presentation").Wrap(

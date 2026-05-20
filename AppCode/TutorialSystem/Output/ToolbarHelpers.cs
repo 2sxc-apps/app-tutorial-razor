@@ -38,7 +38,7 @@ namespace AppCode.Output
     public string AutoShowAllToolbarsEnd() {
       if (!CmsContext.User.IsSiteAdmin)
         Kit.Edit.Enabled = false;
-      Kit.Toolbar.ActivateDemoMode(ui: null);
+      Kit.Toolbar.ActivateDemoMode(ui: "show=never");
       return "";
     }
 
