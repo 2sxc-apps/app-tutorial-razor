@@ -11,20 +11,33 @@
   };
 </script>
 
-<button type="button" class="btn btn-primary"
-  onclick="window.tutOdata.load(specsFilterDemo)">
-  Load all poets
-</button>
+<div class="btn-toolbar gap-2 mb-3" role="toolbar">
+  <button type="button" class="btn btn-primary"
+    onclick="window.tutOdata.load(specsFilterDemo)">
+    Load all poets
+  </button>
 
-<button type="button" class="btn btn-primary"
-  onclick="window.tutOdata.load({ ...specsFilterDemo, $filter: `Name eq 'Gale Hansen'` })">
-  Filter by exact name
-</button>
+  <button type="button" class="btn btn-primary"
+    onclick="window.tutOdata.load({ ...specsFilterDemo, $filter: `Name eq 'Gale Hansen'` })">
+    With $filter eq
+  </button>
 
-<button type="button" class="btn btn-primary"
-  onclick="window.tutOdata.load({ ...specsFilterDemo, $filter: `startswith(Name, 'G')` })">
-  Filter names starting with G
-</button>
+  <button type="button" class="btn btn-primary"
+    onclick="window.tutOdata.load({ ...specsFilterDemo, $filter: `Name ne 'Gale Hansen'` })">
+    With $filter ne
+  </button>
+
+  <button type="button" class="btn btn-primary"
+    onclick="window.tutOdata.load({ ...specsFilterDemo, $filter: `contains(Name, 'a')` })">
+    With contains(...)
+  </button>
+
+  <button type="button" class="btn btn-primary"
+    onclick="window.tutOdata.load({ ...specsFilterDemo, $filter: `startswith(Name, 'G')` })">
+    With startswith(...)
+  </button>
+  
+</div>
 
 <div id="demo02-@UniqueKey">
   <code></code>

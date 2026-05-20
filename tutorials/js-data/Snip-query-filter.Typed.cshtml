@@ -9,19 +9,68 @@
     outputId: "query-filter-output-@UniqueKey",
     query: "ODataAuthors",
     '$filter': "FirstName eq 'Douglas'",
-    '$select': 'FirstName,LastName,Birthday', // add select so table is easier to read
+    '$select': 'FirstName,LastName,Birthday',
   };
 </script>
 
-<button type="button" class="btn btn-primary"
-  onclick="window.tutQueryOdata.load(demoFilter)">
-  ODataAuthors.Default with $filter
-</button>
+<div class="btn-toolbar gap-2 mb-3" role="toolbar">
 
-<button type="button" class="btn btn-primary"
-  onclick="window.tutQueryOdata.load({...demoFilter, stream: 'Sorted'})">
-  ODataAuthors.Sorted with $filter
-</button>
+  <button type="button" class="btn btn-primary"
+    onclick="window.tutQueryOdata.load(demoFilter)">
+    With $filter eq
+  </button>
+
+  <button type="button" class="btn btn-primary"
+    onclick="window.tutQueryOdata.load({...demoFilter, '$filter': `FirstName ne 'Douglas'`})">
+    With $filter ne
+  </button>
+
+  <button type="button" class="btn btn-primary"
+    onclick="window.tutQueryOdata.load({...demoFilter, '$filter': `Birthday gt '1950-01-01'`})">
+    With $filter gt
+  </button>
+
+  <button type="button" class="btn btn-primary"
+    onclick="window.tutQueryOdata.load({...demoFilter, '$filter': `Birthday ge '1950-01-01'`})">
+    With $filter ge
+  </button>
+
+  <button type="button" class="btn btn-primary"
+    onclick="window.tutQueryOdata.load({...demoFilter, '$filter': `Birthday lt '2000-01-01'`})">
+    With $filter lt
+  </button>
+
+  <button type="button" class="btn btn-primary"
+    onclick="window.tutQueryOdata.load({...demoFilter, '$filter': `Birthday le '2000-01-01'`})">
+    With $filter le
+  </button>
+
+  <button type="button" class="btn btn-primary"
+    onclick="window.tutQueryOdata.load({...demoFilter, '$filter': `contains(FirstName, 'a')`})">
+    With contains(...)
+  </button>
+
+  <button type="button" class="btn btn-primary"
+    onclick="window.tutQueryOdata.load({...demoFilter, '$filter': `startswith(FirstName, 'D')`})">
+    With startswith(...)
+  </button>
+
+  <button type="button" class="btn btn-primary"
+    onclick="window.tutQueryOdata.load({...demoFilter, '$filter': `not contains(FirstName, 'a')`})">
+    With not contains(...)
+  </button>
+
+  <button type="button" class="btn btn-primary"
+    onclick="window.tutQueryOdata.load({...demoFilter, '$filter': `FirstName eq 'Douglas' and contains(LastName, 'A')`})">
+    With and
+  </button>
+
+  <button type="button"app class="btn btn-primary"
+    onclick="window.tutQueryOdata.load({...demoFilter, stream: 'Sorted'})">
+    Sorted with $filter
+  </button>
+
+</div>
 
 <div style="overflow-x:auto;" id="query-filter-output-@UniqueKey">
   <code></code><br />
