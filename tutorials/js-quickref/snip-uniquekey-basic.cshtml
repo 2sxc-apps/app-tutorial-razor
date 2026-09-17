@@ -10,7 +10,7 @@
 </button>
 
 @* Create the DIV for the message - it's in another file, but shares the UniqueKey *@
-@Html.Partial("./Uniquekey-Message.cshtml")
+@Html.Partial("./uniquekey-message.cshtml")
 
 @* Trigger the script, and pass in the IDs it will need based on the UniqueKey *@
 @Kit.Page.TurnOn("window.quickReference.demoUniqueQuey()", data: new { buttonId, messageId })

@@ -3,11 +3,11 @@
 @{
   // todo: add to view info
   if (CmsContext.Page.Parameters.IsNotEmpty("view1")) {
-    @Html.Partial("./View-First.cshtml")
+    @Html.Partial("./view-first.cshtml")
     return;
   }
   if (CmsContext.Page.Parameters.IsNotEmpty("view2")) {
-    @Html.Partial("./View-Second.cshtml")
+    @Html.Partial("./view-second.cshtml")
     return;
   }
 }

@@ -5,7 +5,7 @@
   int id = Kit.Convert.ToInt(CmsContext.Page.Parameters["id"]);
 }
 @if (id == 0) {
-  @Html.Partial("Coded-List.cshtml")
+  @Html.Partial("coded-list.cshtml")
 } else {
-  @Html.Partial("Coded-Details.cshtml", new { Id = id })
+  @Html.Partial("coded-details.cshtml", new { Id = id })
 }

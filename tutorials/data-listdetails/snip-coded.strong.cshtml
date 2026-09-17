@@ -1,7 +1,7 @@
 @inherits Custom.Hybrid.RazorTyped
 
 @if (MyPage.Parameters.IsEmpty("id")) {
-  @Html.Partial("Coded-List.Strong.cshtml")
+  @Html.Partial("coded-list.strong.cshtml")
 } else {
-  @Html.Partial("Coded-Details.Strong.cshtml", new { Id = MyPage.Parameters.Int("id") })
+  @Html.Partial("coded-details.strong.cshtml", new { Id = MyPage.Parameters.Int("id") })
 }

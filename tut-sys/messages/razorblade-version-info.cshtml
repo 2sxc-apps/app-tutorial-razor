@@ -1,9 +1,26 @@
 @inherits Custom.Hybrid.RazorTyped
 
-@{
-  var rzr = GetCode("RazorbladeVersion.cs");
-  var version = rzr.VersionDouble();
-}
 <div class="alert alert-primary" role="alert">
-  Your RazorBlade version is @Kit.Convert.ForCode(version) - which is what you need for all these tutorials. 
+  Your RazorBlade version is @Kit.Convert.ForCode(VersionDouble()) - which is what you need for all these tutorials.
 </div>
+
+@functions
+{
+  public float VersionDouble()
+  {
+    var verInfo = GetRazorBladeVersion();
+    if (verInfo == null)
+      return 0;
+
+    var major = verInfo.Major;
+    var minor = verInfo.Minor;
+    return Kit.Convert.ToFloat(major + "." + minor.ToString("D2"));
+  }
+
+  private Version GetRazorBladeVersion()
+  {
+    var div = ToSic.Razor.Blade.Tag.Div();
+    var version = System.Reflection.Assembly.GetAssembly(div.GetType()).GetName().Version;
+    return version;
+  }
+}

@@ -1,3 +1,3 @@
 @inherits Custom.Hybrid.Razor14
 
-@Html.Partial("CodeSwitching." + CmsContext.Platform.Name + ".cshtml")
+@Html.Partial("code-switching." + CmsContext.Platform.Name.ToLower() + ".cshtml")

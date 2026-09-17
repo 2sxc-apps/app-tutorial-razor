@@ -11,7 +11,7 @@
 @{
   // Invisible code, simulate view switching
   if (CmsContext.Page.Parameters.IsNotEmpty("Id")) {
-    @Html.Partial("./Snip-Query-Details.Dyn.cshtml", new { Tutorial = DynamicModel.Tutorial })
+    @Html.Partial("./snip-query-details.dyn.cshtml", new { Tutorial = DynamicModel.Tutorial })
     return;
   }
 }

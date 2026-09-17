@@ -2,7 +2,7 @@
 @using AppCode.Helpers
 
 @{
-  var powerLib = GetService<QrHelper>(); // GetCode("FunctionsWithContext.cs");
+  var powerLib = GetService<QrHelper>();
 }
 <div>
   <img loading="lazy" src='@powerLib.QrPath("https://2sxc.org")' width="75px">

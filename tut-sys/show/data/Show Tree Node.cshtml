@@ -38,7 +38,7 @@
             Sub-Items on field <strong><em>@subNodeName</em></strong> - found @subNodes.Count()
             <ul>
               @foreach (var subNode in AsItems(subNodes)) {
-                @Html.Partial("./Show Tree Node.cshtml", new {
+                @Html.Partial("./show tree node.cshtml", new {
                   Node = subNode,
                   SubNodeNames =  MyModel.String("SubNodeNames"),
                   ParentField = MyModel.String("ParentField", fallback: ""),

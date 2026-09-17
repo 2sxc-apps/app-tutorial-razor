@@ -6,8 +6,8 @@
   var tree = Kit.Data.GetSource<TreeBasicWithParents>();
   var root = AsItem(tree.List.FirstOrDefault(i => i.EntityId == 1));
 }
-@Html.Partial("../../tut-sys/show/data/Show Tree.cshtml",
+@Html.Partial("../../tut-sys/show/data/show tree.cshtml",
   new { Title = "Show Tree of Data", Root = root, SubNodeNames = "SubItems", ParentField = "Parent" })
 
-@Html.Partial("../../tut-sys/show/data/Show Data List.cshtml", 
+@Html.Partial("../../tut-sys/show/data/show data list.cshtml", 
   new { Title = "Flat List of Items", Data = tree })

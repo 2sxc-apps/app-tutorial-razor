@@ -1,13 +1,13 @@
 @inherits Custom.Hybrid.RazorTyped
 @using AppCode.Razor
 @* In this example the Razor expects a string-only parameter *@
-@Html.Partial("Box-Model-Title.cshtml", "Hello, this is the first line")
+@Html.Partial("box-model-title.cshtml", "Hello, this is the first line")
 
 @* In this example the Razor expects a tuple with 2 strings *@
-@Html.Partial("Box-Model-Title-Color.cshtml", ("Second line!", "red"))
+@Html.Partial("box-model-title-color.cshtml", ("Second line!", "red"))
 
 @* This example uses a strictly typed model AppCode.Razor.TutTitleColorModel *@
-@Html.Partial("Box-Model-TutTitleColor.cshtml", new TutTitleColorModel {
+@Html.Partial("box-model-tuttitlecolor.cshtml", new TutTitleColorModel {
   Title = "I'm last!",
   Color = "blue"
 })
