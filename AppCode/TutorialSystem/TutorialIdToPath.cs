@@ -21,7 +21,7 @@ namespace AppCode.TutorialSystem
     public string Folder { get; set; } = "";
     public string Rest { get; set; } = "";
     public string Path => "tutorials/" + Folder;
-    public string FileName => "Snip-" + Rest + Variant + ".cshtml";
+    public string FileName => "snip-" + Rest + Variant + ".cshtml";
 
     public string FullPath => Path + "/" + FileName;
   }

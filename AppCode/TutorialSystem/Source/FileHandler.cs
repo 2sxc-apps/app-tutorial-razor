@@ -236,7 +236,8 @@ namespace AppCode.TutorialSystem.Source
       var appPath = App.Folder.PhysicalPath;// + "\\";
       Log.Add("AppPath: " + appPath);
       var pathWithTrimmedFirstSlash = pathInApp.TrimStart(new [] { '/', '\\' });
-      var fullPath = System.IO.Path.Combine(appPath, pathWithTrimmedFirstSlash);
+      var fullPath = System.IO.Path.Combine(appPath, pathWithTrimmedFirstSlash)
+        .Replace("\\", "/");
       return l(fullPath, fullPath);
     }
 

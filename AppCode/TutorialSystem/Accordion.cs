@@ -62,7 +62,7 @@ namespace AppCode.TutorialSystem
             Log.Add("Found exact: " + fileName);
             return new Section(this, Kit.HtmlTags, NextName(), item: itm, fileName: fileName, variantMatch: VariantMatch.Exact);
           }
-          if (Variant == "strong" &&  CheckFile(tutorialId, "." + "Typed", out string fileNameFb)) {
+          if (Variant == "strong" &&  CheckFile(tutorialId, "." + VariantTyped, out string fileNameFb)) {
             Log.Add("Found fallback: " + fileNameFb);
             return new Section(this, Kit.HtmlTags, NextName(), item: itm, fileName: fileNameFb, variantMatch: VariantMatch.Fallback);
           }
@@ -81,8 +81,8 @@ namespace AppCode.TutorialSystem
       var l = Log.Call<bool>($"tutorialId: {tutorialId}; variant: {variant}");
       var tutInfo = new TutorialIdToPath(tutorialId, variant);
 
-      fileName = System.IO.Path.Combine(tutInfo.Path, tutInfo.FileName);
-      var fullPath = System.IO.Path.Combine(App.Folder.PhysicalPath + "\\", fileName);
+      fileName = System.IO.Path.Combine(tutInfo.Path, tutInfo.FileName).Replace("\\", "/");
+      var fullPath = System.IO.Path.Combine(App.Folder.PhysicalPath + "/", fileName);
 
       if (System.IO.File.Exists(fullPath)) {
         fileName = "/" + fileName; // System.IO.Path.Combine(tutInfo.Path, tutInfo.FileName);

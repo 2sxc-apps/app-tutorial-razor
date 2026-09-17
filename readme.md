@@ -37,6 +37,10 @@ Please follow the [guide](https://docs.2sxc.org/abyss/contribute/tutorials/index
 
 ## History
 
+### 2026-09-17
+
+1. 2dm: Update system to use lower case for snippet file names
+
 ### 2026-05-20
 
 1. 2dm/2rb: pushed odata tutorial update by 2rb which was dormant
