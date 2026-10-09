@@ -37,6 +37,10 @@ Please follow the [guide](https://docs.2sxc.org/abyss/contribute/tutorials/index
 
 ## History
 
+### 2026-10-09
+
+1. 2rb: Correct partial paths and casing for Linux compatibility
+
 ### 2026-09-17
 
 1. 2dm: Update system to use lower case for snippet file names
