@@ -24,9 +24,11 @@ You can also download the latest copy of this App directly from the [releases](.
 | App Catalog         | ✅     | See [app catalog](https://2sxc.org/en/apps/app/dnn-razor-tutorial)            |
 | Screenshots         | ✅     | See [app catalog](https://2sxc.org/en/apps/app/dnn-razor-tutorial)            |
 | Best Practices      | ✅     | Uses v16.00 conventions                                                       |
-| Bootstrap 3         | ✔️     |                                                                               |
-| Bootstrap 4         | ✔️     | Works, but not optimized                                                      |
-| Bootstrap 5         | ✅     | Works, optimized; previous versions work but are not optimized                |
+| Bootstrap 3         | 🔳     | Tutorial examples only; not maintained as an app target                       |
+| Bootstrap 4         | 🔳     | Tutorial examples only; not maintained as an app target                       |
+| Bootstrap 5         | ✅     | The maintained and optimized app target                                       |
+
+Bootstrap 3 and Bootstrap 4 snippets are intentionally retained as historical Koi examples. They are tutorial content, not supported runtime targets of the app, so they are excluded from the BS5-only app cleanup.
 
 ## Contribute
 
@@ -36,6 +38,10 @@ Please follow the [guide](https://docs.2sxc.org/abyss/contribute/tutorials/index
 [//]: # (## Customize the App not needed, so commented out)
 
 ## History
+
+### 2026-10-30
+
+1. 2rb: Clarify that Bootstrap 3 and Bootstrap 4 snippets are retained tutorial content, while Bootstrap 5 is the only maintained app target
 
 ### 2026-10-09
 
